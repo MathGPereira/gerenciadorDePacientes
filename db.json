@@ -1,18 +1,22 @@
 {
-  "usuarios": [
+  "paciente": [
     {
       "id": 1,
       "nome": "matheus",
       "sobrenome": "pereira",
       "idade": 24,
-      "sexo": "M"
+      "sexo": "M",
+      "tratamento": "precisa tratar as pernas",
+      "consulta": "11/03/2022"
     },
     {
       "id": 2,
       "nome": "joão",
       "sobrenome": "alcântara",
       "idade": 19,
-      "sexo": "M"
+      "sexo": "M",
+      "tratamento": "precisa tratar as costas",
+      "consulta": "12/03/2022"
     }
   ]
 }
