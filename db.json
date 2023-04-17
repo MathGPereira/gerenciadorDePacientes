@@ -1,0 +1,18 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "matheus",
+      "sobrenome": "pereira",
+      "idade": 24,
+      "sexo": "M"
+    },
+    {
+      "id": 2,
+      "nome": "joão",
+      "sobrenome": "alcântara",
+      "idade": 19,
+      "sexo": "M"
+    }
+  ]
+}
