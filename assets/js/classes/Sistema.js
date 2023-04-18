@@ -1,4 +1,3 @@
-//import getSetDb from "../conectaBancoDados/conectaDb.js"
 import Paciente from "./Paciente.js"
 import Medico from "./Medico.js";
 
@@ -22,22 +21,30 @@ export default class Sistema {
         const BancoDeDados = await Sistema.getSetDb("GET", cadastro, tipoCadastro);
 
         if(JSON.stringify(BancoDeDados).includes(`"id":${id}`)) {
-            if(tipoCadastro === "paciente") {
-                BancoDeDados.forEach(pessoaCadastrada => {
-                    if (pessoaCadastrada.id === id) {
-                        const {id, nome, sobrenome, idade, sexo, tratamento, consulta} = pessoaCadastrada;
-                    }
-                });
-            }else if(tipoCadastro === "medico") {
-                BancoDeDados.forEach(pessoaCadastrada => {
-                    if (pessoaCadastrada.id === id) {
-                        const {id, nome, sobrenome, email} = pessoaCadastrada;
-                    }
-                });
-            }
+            BancoDeDados.forEach(pessoaCadastrada => {
+                if(pessoaCadastrada.id === id && tipoCadastro === "paciente") {
+                    const {id, nome, sobrenome, idade, sexo, tratamento, consulta} = pessoaCadastrada;
+                }else if(pessoaCadastrada.id === id && tipoCadastro === "medico") {
+                    const {id, nome, sobrenome, email} = pessoaCadastrada;
+                }
+            });
         }else {
             console.log("Não há nenhum paciente com este id cadastrado");
         }
+    }
+
+    async validaLogin() {
+        const emailDigitado = document.querySelector("[data-email]").value;
+        const senhaDigitada = document.querySelector("[data-senha]").value;
+        const resposta = await Sistema.getSetDb("GET", null, "medico");
+
+        resposta.forEach(cadastro => {
+            if(cadastro.email === emailDigitado) {
+                return true;
+            }
+            
+            return false
+        });
     }
 
     static async getSetDb(metodo, cadastro, tipoEntrada) {

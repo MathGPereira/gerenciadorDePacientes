@@ -5,5 +5,5 @@ document.querySelector(".login__entrar").addEventListener("click", (e) => {
     e.preventDefault();
 
     //sistema.setCadastro("matheus", "pereira", "medico", "matheusgp.mto@outlook.com");
-    sistema.getCadastro(1, null, "medico");
+    sistema.validaLogin();
 });
