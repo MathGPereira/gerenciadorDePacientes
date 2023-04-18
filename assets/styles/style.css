@@ -1,6 +1,23 @@
+html, body {
+  box-sizing: border-box;
+  font: normal 400 16px "Roboto", sans-serif;
+  height: 100vh;
+  line-height: 1.2em;
+  width: 100vw;
+}
+
 .cabecalho {
   background-image: radial-gradient(#743152, #4F244F, #462250);
+  height: auto;
+  letter-spacing: 3px;
+  padding: 2em 1em 1em;
   text-align: center;
+}
+.cabecalho__titulo {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 1em;
 }
 .cabecalho__foto-perfil {
   border-radius: 100%;

@@ -1,0 +1,9 @@
+@import "./variaveis";
+
+html, body {
+    box-sizing: border-box;
+    font: $font-style-principal $font-weight-principal $font-size-principal $font-family-principal;
+    height: 100vh;
+    line-height: $line-heigth-principal;
+    width: 100vw;
+}

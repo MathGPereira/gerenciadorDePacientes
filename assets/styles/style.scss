@@ -1,9 +1,3 @@
-.cabecalho {
-    background-image: radial-gradient(#743152, #4F244F, #462250);
-    text-align: center;
-    &__foto-perfil {
-        border-radius: 100%;
-        height: 100px;
-        width: 100px;
-    }
-}
+@import "./abstract/base";
+@import "./abstract/variaveis";
+@import "./componentes/cabecalho";
