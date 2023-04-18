@@ -4,7 +4,40 @@
     background-color: $background-formulario;
     border-radius: 10px;
     padding: 2em 1em 1em;
-    a {
+    text-align: center;
+    .login__link {
         display: block;
+        margin-bottom: 2em;
+    }
+    .login__trocar-senha {
+        color: $color-link-trocar-senha;
+        cursor: pointer;
+        font-size: $font-size-trocar-senha;
+        font-weight: $font-weight-trocar-senha;
+        text-align: right;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .login__entrar {
+        background-image: $backgrund-botao;
+        border: none;
+        border-radius: 10px;
+        color: $color-botao;
+        padding: 10px 2em;
+        font-size: 20px;
+        font-weight: $font-weight-botao;
+    }
+    .login__criar-conta {
+        color: $color-link-criar-conta;
+        cursor: pointer;
+        font-size: $font-size-link-criar-conta;
+        font-weight: $font-weight-link-criar-conta;
+        margin: 1em 0 0 0;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

@@ -35,15 +35,47 @@ html, body {
   background-color: #FFFFFF;
   border-radius: 10px;
   padding: 2em 1em 1em;
+  text-align: center;
 }
-.principal__login a {
+.principal__login .login__link {
   display: block;
+  margin-bottom: 2em;
+}
+.principal__login .login__trocar-senha {
+  color: #ED2728;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  text-decoration: none;
+}
+.principal__login .login__trocar-senha:hover {
+  text-decoration: underline;
+}
+.principal__login .login__entrar {
+  background-image: linear-gradient(to right, #D62324, #711115);
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 10px 2em;
+  font-size: 20px;
+  font-weight: 700;
+}
+.principal__login .login__criar-conta {
+  color: #711115;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 1em 0 0 0;
+  text-decoration: none;
+}
+.principal__login .login__criar-conta:hover {
+  text-decoration: underline;
 }
 
 .login__agrupamento {
   box-sizing: border-box;
   border: none;
-  padding: 1em;
   text-align: center;
 }
 .login__agrupamento .agrupamento__titulo {
