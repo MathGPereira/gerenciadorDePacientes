@@ -1,4 +1,5 @@
-import { getSetDb } from "../conectaBancoDados/conectaDb.js";
+import getSetDb from "../conectaBancoDados/conectaDb.js";
+import Paciente from "./Paciente.js";
 
 export default class Medico {
 
@@ -16,8 +17,9 @@ export default class Medico {
         this.senha = senha;
     }
 
-    async setPaciente(objeto) {
-        const BancoDeDados = await getSetDb("POST", objeto);
+    async setPaciente(nome, sobrenome, idade, sexo, tratamento, dataConsulta) {
+        const paciente = new Paciente(nome, sobrenome, idade, sexo, tratamento, dataConsulta);
+        const BancoDeDados = await getSetDb("POST", paciente);
 
         console.log("Paciente cadastrado com sucesso");
     }
