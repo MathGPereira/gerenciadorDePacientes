@@ -10,8 +10,8 @@ export default class Sistema {
             const [idade, sexo, tratamento, dataDaConsulta] = [...outrosDados];
             pessoaCadastrada = new Paciente(nome, sobrenome, idade, sexo, tratamento, dataDaConsulta);
         }else if(tipoCadastro === "medico") {
-            const [email] = [...outrosDados];
-            pessoaCadastrada = new Medico(nome, sobrenome, email);
+            const [email, senha] = [...outrosDados];
+            pessoaCadastrada = new Medico(nome, sobrenome, email, senha);
         }
 
         await getSetDb("POST", pessoaCadastrada, tipoCadastro);
@@ -39,10 +39,9 @@ export default class Sistema {
         const resposta = await Sistema.getSetDb("GET", null, "medico");
 
         resposta.forEach(cadastro => {
-            if(cadastro.email === emailDigitado) {
+            if(cadastro.email === emailDigitado && cadastro.senha === senhaDigitada) {
                 return true;
             }
-            
             return false
         });
     }
