@@ -1,18 +1,18 @@
-export default async function getSetDb(metodo, paciente, tipoEntrada) {
+export default async function getSetDb(metodo, cadastro, tipoEntrada) {
     let requisicao;
     const caminho = `http://localhost:3000/${tipoEntrada}`;
 
     try {
-        requisicao = await fetch(caminho, validaOpcoes(metodo, paciente));
+        requisicao = await fetch(caminho, validaOpcoes(metodo, cadastro));
     }catch(e) {
-        console.log(e);
+        throw new Error("Não há nenhum cadastro com esse id");
     }finally {
         const requisicaoJson = await requisicao.json();
         return requisicaoJson; 
     }
 }
 
-function validaOpcoes(metodo, paciente) {
+function validaOpcoes(metodo, cadastro) {
     let option;
 
     if(metodo === "GET") {
@@ -25,7 +25,7 @@ function validaOpcoes(metodo, paciente) {
             headers: {
                 "Content-type": "application/json"
             },
-            body: `${JSON.stringify(paciente)}`
+            body: `${JSON.stringify(cadastro)}`
         };
     }
 
