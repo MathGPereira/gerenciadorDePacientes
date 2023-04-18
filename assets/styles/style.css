@@ -11,7 +11,7 @@ html, body {
   background-image: radial-gradient(#743152, #4F244F, #462250);
   height: auto;
   letter-spacing: 3px;
-  padding: 2em 1em 1em;
+  padding: 1.5em 1em 1em;
   text-align: center;
 }
 .cabecalho__titulo {
@@ -39,7 +39,7 @@ html, body {
 }
 .principal__login .login__link {
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .principal__login .login__trocar-senha {
   color: #ED2728;
