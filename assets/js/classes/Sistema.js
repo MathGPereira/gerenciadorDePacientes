@@ -33,23 +33,25 @@ export default class Sistema {
         }
     }
 
-    async validaLogin() {
-        const emailDigitado = document.querySelector("[data-email]").value;
-        const senhaDigitada = document.querySelector("[data-senha]").value;
+    async validaLogin(emailDigitado, senhaDigitada) {
+        let boolean;
         const resposta = await Sistema.getSetDb("GET", null, "medico");
 
-        resposta.forEach(cadastro => {
+        resposta.map(cadastro => {
             if(cadastro.email === emailDigitado && cadastro.senha === senhaDigitada) {
-                return true;
+                boolean = true;
+            }else {
+                boolean = false;
             }
-            return false
         });
+
+        return boolean;
     }
 
     static async getSetDb(metodo, cadastro, tipoEntrada) {
         let requisicao;
         const caminho = `http://localhost:3000/${tipoEntrada}`;
-    
+        
         try {
             requisicao = await fetch(caminho, Sistema.validaOpcoes(metodo, cadastro));
         }catch(e) {
