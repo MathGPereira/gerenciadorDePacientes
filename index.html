@@ -4,13 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Teste</title>
+        <title>Agenda</title>
+        <link type="text/css" rel="stylesheet" href="./assets/styles/reset.css">
         <link type="text/css" rel="stylesheet" href="./assets/styles/style.css">
     </head>
     <body>
-        <header class="cabecalho"></header>
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">Agenda</h1>
+            <img src="./assets/img/perfil.jpg" alt="Foto de perfil da pessoa que está acessando a conta" class="cabecalho__foto-perfil">
+        </header>
         <main class="principal">
-            <button>click</button>
+            <form action="" method="" id="login" class="principal__login">
+                <fieldset form="login" class="login__agrupamento">
+                    <legend class="login__titulo">Login</legend>
+                    <label for="email" class="agrupamento__rotulo">E-mail</label>
+                    <input type="email" name="email" id="email" class="agrupamento__input">
+                    <label for="senha" class="agrupamento__rotulo">Senha</label>
+                    <input type="password" name="senha" id="senha" class="agrupamento__input">
+                    <a href="#" rel="next follow" target="_self" class="agrupamento__trocar-senha">Esqueci minha senha</a>
+                    <button type="submit" form="login" name="entrar" class="agrupamento__entrar">Entrar</button>
+                    <a href="#" rel="next follow" target="_self" class="agrupamento__criar-conta"Criar Conta></a>
+                </fieldset>
+            </form>
         </main>
         <footer class="rodape"></footer>
         <script type="module" src="./assets/js/main.js"></script>

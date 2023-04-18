@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style.css.map */
+.cabecalho {
+  background-image: radial-gradient(#743152, #4F244F, #462250);
+  text-align: center;
+}
+.cabecalho__foto-perfil {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */
