@@ -1,8 +1,6 @@
-import {getDb} from "../conectaBancoDados/conectaDb.js";
+export default class Paciente {
 
-export class Paciente {
-
-    id;
+    static id = 0;
     nome;
     sobrenome;
     idade;
@@ -13,19 +11,6 @@ export class Paciente {
         this.sobrenome = sobrenome;
         this.idade = idade;
         this.sexo = sexo.toUppercase;
-    }
-
-    async verificaPaciente(id) {
-        const BancoDeDados = await getDb();
-
-        if(JSON.stringify(BancoDeDados).includes(`"id":${id}`)) {
-            BancoDeDados.forEach(paciente => {
-                if (paciente.id === id) {
-                    console.log(paciente);
-                }
-            });
-        }else {
-            console.log("Não há nenhum paciente com este id cadastrado");
-        }
+        Paciente.id++;
     }
 }
