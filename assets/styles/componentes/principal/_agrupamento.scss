@@ -1,0 +1,41 @@
+@import "../../abstract/variaveis";
+
+.login__agrupamento {
+    box-sizing: border-box;
+    border: none;
+    padding: 1em;
+    text-align: center;
+    .agrupamento__titulo {
+        color: $color-titulo;
+        font-size: $font-size-titulo;
+        font-weight: $font-weight-titulo;
+        margin-bottom: .2em;
+    }
+    .agrupamento__rotulo {
+        color: $color-rotulo;
+        cursor: pointer;
+        display: block;
+        font-weight: $font-weight-rotulo-formulario;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .agrupamento__input {
+        background-color: $background-input;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        outline: none;
+        padding: 1em;
+        width: 90%;
+        &::placeholder {
+            font-size: $font-size-placeholder;
+            text-align: center;
+        }
+        &:focus {
+            outline: auto darkred;
+        }
+    }
+    #input-senha {
+        margin-top: 1.5em;
+    }
+}

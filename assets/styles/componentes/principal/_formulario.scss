@@ -1,0 +1,10 @@
+@import "../../abstract/variaveis";
+
+.principal__login {
+    background-color: $background-formulario;
+    border-radius: 10px;
+    padding: 2em 1em 1em;
+    a {
+        display: block;
+    }
+}

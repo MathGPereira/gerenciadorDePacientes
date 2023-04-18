@@ -1,4 +1,5 @@
 html, body {
+  background-color: #F4F2FF;
   box-sizing: border-box;
   font: normal 400 16px "Roboto", sans-serif;
   height: 100vh;
@@ -21,6 +22,64 @@ html, body {
 }
 .cabecalho__foto-perfil {
   border-radius: 100%;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
+}
+
+.principal {
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.principal__login {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 2em 1em 1em;
+}
+.principal__login a {
+  display: block;
+}
+
+.login__agrupamento {
+  box-sizing: border-box;
+  border: none;
+  padding: 1em;
+  text-align: center;
+}
+.login__agrupamento .agrupamento__titulo {
+  color: #ED2728;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.login__agrupamento .agrupamento__rotulo {
+  color: #701414;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.login__agrupamento .agrupamento__input {
+  background-color: #F3F3F3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  padding: 1em;
+  width: 90%;
+}
+.login__agrupamento .agrupamento__input::-moz-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.login__agrupamento .agrupamento__input::placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.login__agrupamento .agrupamento__input:focus {
+  outline: auto darkred;
+}
+.login__agrupamento #input-senha {
+  margin-top: 1.5em;
 }/*# sourceMappingURL=style.css.map */

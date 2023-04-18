@@ -1,6 +1,7 @@
 @import "./variaveis";
 
 html, body {
+    background-color: $background-principal;
     box-sizing: border-box;
     font: $font-style-principal $font-weight-principal $font-size-principal $font-family-principal;
     height: 100vh;

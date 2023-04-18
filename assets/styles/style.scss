@@ -1,3 +1,6 @@
 @import "./abstract/base";
 @import "./abstract/variaveis";
-@import "./componentes/cabecalho";
+@import "./componentes/cabecalho/cabecalho";
+@import "./componentes/principal/principal";
+@import "./componentes/principal/formulario";
+@import "./componentes/principal/agrupamento";

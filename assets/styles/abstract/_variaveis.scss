@@ -1,12 +1,34 @@
 // Variáveis gerais do arquivo
-$font-family-principal: 'Roboto', sans-serif;
-$font-size-principal: 16px;
-$font-style-principal: normal;
-$font-weight-principal: 400;
-$line-heigth-principal: 1.2em;
+    $background-principal: #F4F2FF;
+    $font-family-principal: 'Roboto', sans-serif;
+    $font-size-principal: 16px;
+    $font-style-principal: normal;
+    $font-weight-principal: 400;
+    $line-heigth-principal: 1.2em;
+// Variáveis gerais do arquivo
 
 // Variáveis do cabeçalho
-$cor-cabecalho: radial-gradient(#743152, #4F244F, #462250);
-$font-size-cabecalho: 32px;
-$font-weight-cabecalho: 700;
-$color-cabecalho: #FFFFFF;
+    $cor-cabecalho: radial-gradient(#743152, #4F244F, #462250);
+    $font-size-cabecalho: 32px;
+    $font-weight-cabecalho: 700;
+    $color-cabecalho: #FFFFFF;
+// Variáveis do cabeçalho
+
+// Variáveis do principal
+    // Variáveis do formulário
+        $background-formulario: #FFFFFF;
+        // Variáveis título
+            $color-titulo: #ED2728;
+            $font-size-titulo: 50px;
+            $font-weight-titulo: 700;
+        // Variáveis título
+        // Variáveis rótulos
+            $color-rotulo: #701414;
+            $font-weight-rotulo-formulario: 500;
+        // Variáveis rótulos
+        // Variáveis input
+            $background-input: #F3F3F3;
+            $font-size-placeholder: 18px;
+        // Variáveis input
+    // Variáveis do formulário
+// Variáveis do principal
