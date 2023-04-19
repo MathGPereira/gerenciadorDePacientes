@@ -6,7 +6,9 @@ const menuLateral = document.querySelector("[data-menu-lateral]");
 const spansNome = document.querySelectorAll("[data-nome]");
 
 spansNome.forEach(async span => {
-    span.innerHTML = await sistema.getCache();
+    const resposta = await sistema.getCache()
+    
+    span.innerHTML = resposta[0];
 });
 
 modificadorDeEstado.forEach(modificador => {

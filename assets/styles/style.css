@@ -265,7 +265,7 @@ html, body {
 }
 
 .principal {
-  height: calc(100vh - 10.9375em);
+  height: calc(100vh - 11.2em);
 }
 .principal .principal__saudacoes {
   color: #808080;

@@ -53,8 +53,8 @@ export default class Sistema {
                 nomeDoMedico = medicosCadastrados[indice].nome;
             }
         });
-
-        return nomeDoMedico;        
+        
+        return [nomeDoMedico, pessoaLogada];        
     }
 
     async validaLogin(emailDigitado, senhaDigitada) {

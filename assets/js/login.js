@@ -6,7 +6,7 @@ let senhaDigitada = document.querySelector("[data-senha]");
 const sistema = new Sistema();
 const formularioLogin = document.querySelector("[data-login-formulario]");
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
     sistema.autoComplete();
 });
 
