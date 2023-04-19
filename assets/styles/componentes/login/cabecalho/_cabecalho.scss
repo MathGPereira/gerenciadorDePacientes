@@ -1,7 +1,7 @@
-@import "../../abstract/variaveis";
+@import "../../../abstract/variaveis";
 
 .cabecalho {
-    background-color: $cor-cabecalho;
+    background-image: $cor-cabecalho;
     height: auto;
     letter-spacing: 3px;
     padding: 1.5em 1em 1em;

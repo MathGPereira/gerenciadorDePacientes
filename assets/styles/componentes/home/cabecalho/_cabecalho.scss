@@ -1,0 +1,43 @@
+@import "../../../abstract/variaveis";
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    .cabecalho__menu-hamburguer {
+        .menu-hamburguer__icone {
+            background: url("../img/icones/menu-hamburguer.png") no-repeat center center / cover;
+            height: 32px;
+            width: 32px;
+        }
+    }
+    .cabecalho__informacoes-gerais {
+        color: #FFFFFF;
+        column-gap: 5px;
+        display: grid;
+        grid-template: repeat(2, auto) / auto 1fr;
+        .informacoes-gerais__nome {
+            align-self: end;
+            font-size: 16px;
+            font-weight: 700;
+            grid-area: 1/1/2/2;
+        }
+        .informacoes-gerais__perfil {
+            border-radius: 50%;
+            grid-area: 1/2/3/3;
+            height: 55px;
+            width: 55px;
+        }
+        .informacoes-gerais__sair {
+            align-self: start;
+            color: #FFFFFF;
+            justify-self: end;
+            text-decoration: none;
+            text-transform: lowercase;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

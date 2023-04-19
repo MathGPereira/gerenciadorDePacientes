@@ -1,6 +1,13 @@
+// Importes dos arquivos globais
 @import "./abstract/base";
 @import "./abstract/variaveis";
+
+// Importes dos arquivos da aba de Login
 @import "./componentes/login/cabecalho/cabecalho";
 @import "./componentes/login/principal/principal";
 @import "./componentes/login/principal/formulario";
 @import "./componentes/login/principal/agrupamento";
+
+// Importes dos arquivos da aba Home
+@import "./componentes/home/cabecalho/cabecalho";
+

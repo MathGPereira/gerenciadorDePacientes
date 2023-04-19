@@ -16,7 +16,7 @@ formularioLogin.addEventListener("submit", async evento => {
     if(await sistema.validaLogin(emailDigitado.value, senhaDigitada.value)) {
         sistema.gravaLocalStorage(emailDigitado.value, senhaDigitada.value);
 
-        window.location.href = "./assets/paginas/home.html";
+        window.location.replace("./assets/paginas/home.html");
     }else {
         imprimeErro("Usuário ou senha incorretos");
 
