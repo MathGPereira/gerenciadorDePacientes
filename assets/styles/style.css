@@ -229,4 +229,30 @@ html, body {
 
 .ativo {
   left: 0px;
+}
+
+.rodape {
+  background-image: linear-gradient(to right, #ED2728 10%, #711115);
+}
+.rodape .rodape__icone {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+.rodape .rodape__icone .icone {
+  height: 64px;
+  width: 64px;
+}
+.rodape .rodape__icone .icone-home {
+  background: url("../img/icones/botao-home.png") no-repeat center center/cover;
+}
+.rodape .rodape__icone .icone-pacientes {
+  background: url("../img/icones/paciente.png") no-repeat center center/cover;
+}
+.rodape .rodape__icone .icone-agendamentos {
+  background: url("../img/icones/agenda.png") no-repeat center center/cover;
+}
+.rodape .rodape__icone .icone-tarefas {
+  background: url("../img/icones/tarefas.png") no-repeat center center/cover;
 }/*# sourceMappingURL=style.css.map */

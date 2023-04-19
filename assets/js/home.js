@@ -1,4 +1,12 @@
 const modificadorDeEstado = document.querySelectorAll("[data-modificador-estado]");
 const menuLateral = document.querySelector("[data-menu-lateral]");
 
-modificadorDeEstado.forEach(estado => estado.addEventListener("click", () => menuLateral.classList.toggle("ativo")));
+modificadorDeEstado.forEach(modificador => {
+    modificador.addEventListener("click", () => {
+        if(modificador.dataset.modificadorEstado === "principal") {
+            menuLateral.classList.remove("ativo")
+        }else {
+            menuLateral.classList.add("ativo")
+        }
+    })
+});

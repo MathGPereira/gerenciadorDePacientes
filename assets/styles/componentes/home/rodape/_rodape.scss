@@ -1,0 +1,27 @@
+@import "../../../abstract/variaveis";
+
+.rodape {
+    background-image: $cor-rodape;
+    .rodape__icone {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 0;
+        .icone {
+            height: 64px;
+            width: 64px;
+        }
+        .icone-home {
+            background: url("../img/icones/botao-home.png") no-repeat center center / cover;
+        }
+        .icone-pacientes {
+            background: url("../img/icones/paciente.png") no-repeat center center / cover;
+        }
+        .icone-agendamentos {
+            background: url("../img/icones/agenda.png") no-repeat center center / cover;
+        }
+        .icone-tarefas {
+            background: url("../img/icones/tarefas.png") no-repeat center center / cover;
+        }
+    }
+}
