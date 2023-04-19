@@ -8,3 +8,7 @@ html, body {
     line-height: $line-heigth-principal;
     width: 100vw;
 }
+
+.nome {
+    text-transform: capitalize;
+}

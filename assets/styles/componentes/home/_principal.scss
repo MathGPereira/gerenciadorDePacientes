@@ -1,0 +1,89 @@
+@import "../../abstract/variaveis";
+
+.principal {
+    height: calc(100vh - 10.9375em);
+    .principal__saudacoes {
+        color: #808080;
+        font-size: 14px;
+    }
+    .principal__titulo {
+        color: $cor-primaria;
+        font-size: 30px;
+        font-weight: 700;
+        margin: .5em 0;
+    }
+    .principal__consultas {
+        background-color: $branco;
+        border-radius: 16px;
+        box-sizing: border-box;
+        margin-bottom: .5em;
+        padding: .3em 1em;
+        text-align: center;
+        .consultas__titulo {
+            color: $cor-secundaria;
+            font-weight: 500;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .consultas__descricao {
+            border-left: 5px solid $cor-secundaria;
+            box-sizing: border-box;
+            font-size: 15px;
+            margin: 1em 0;
+            padding-left: .5em;
+            text-align: left;
+            .descricao__quantidade-consultas {
+                color: $cor-secundaria;
+                font-weight: 700;
+            }
+            .descricao__verifique-agenda {
+                font-weight: 700;
+            }
+        }
+        .consultas__ver-tudo {
+            color: $cor-secundaria;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 700;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .principal__tarefas {
+        background-color: $branco;
+        border-radius: 16px;
+        box-sizing: border-box;
+        padding: .3em 1em;
+        text-align: center;
+        .tarefas__titulo {
+            color: $cor-secundaria;
+            font-weight: 500;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .tarefas__formulario {
+            box-sizing: border-box;
+            text-align: left;
+            display: grid;
+            grid-template: repeat(4, auto) / auto 1fr;
+            margin: 1em 0;
+            .checkbox {
+                display: inline-block;
+            }
+            .formulario__rotulo {
+                display: inline-block;
+                line-height: 1.5em;
+            }
+        }
+        .tarefas__ver-tudo {
+            color: $cor-secundaria;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 700;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
