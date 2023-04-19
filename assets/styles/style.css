@@ -125,43 +125,108 @@ html, body {
   padding: 0.5em;
 }
 
-.cabecalho {
+.cabecalho-home {
   align-items: center;
+  background-image: linear-gradient(to right, #ED2728 10%, #711115);
   display: flex;
-  justify-content: space-between;
   font-size: 12px;
+  justify-content: space-between;
+  padding: 1em;
 }
-.cabecalho .cabecalho__menu-hamburguer .menu-hamburguer__icone {
+.cabecalho-home .cabecalho__menu-hamburguer .menu-hamburguer__icone {
   background: url("../img/icones/menu-hamburguer.png") no-repeat center center/cover;
   height: 32px;
   width: 32px;
 }
-.cabecalho .cabecalho__informacoes-gerais {
+.cabecalho-home .cabecalho__informacoes-gerais {
   color: #FFFFFF;
   -moz-column-gap: 5px;
        column-gap: 5px;
   display: grid;
   grid-template: repeat(2, auto)/auto 1fr;
 }
-.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__nome {
+.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__nome {
   align-self: end;
   font-size: 16px;
   font-weight: 700;
   grid-area: 1/1/2/2;
 }
-.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__perfil {
+.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__perfil {
   border-radius: 50%;
   grid-area: 1/2/3/3;
   height: 55px;
   width: 55px;
 }
-.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__sair {
+.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__sair {
   align-self: start;
   color: #FFFFFF;
   justify-self: end;
   text-decoration: none;
   text-transform: lowercase;
 }
-.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__sair:hover {
+.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__sair:hover {
   text-decoration: underline;
+}
+
+.lateral {
+  background-color: #FFFFFF;
+  border-right: 1px solid #ED2728;
+  box-sizing: border-box;
+  height: 100vh;
+  left: -9999px;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  transition: left 0.7s ease-in-out;
+  width: 50vw;
+}
+.lateral .lateral__informacoes-gerais {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  display: grid;
+  grid-template: repeat(2, auto)/1fr auto;
+  margin-bottom: 2em;
+}
+.lateral .lateral__informacoes-gerais .informacoes-gerais__nome {
+  font-size: 18px;
+  font-weight: 700;
+}
+.lateral .lateral__informacoes-gerais .informacoes-gerais__alterar-usuario {
+  color: #ED2728;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.lateral .lateral__informacoes-gerais .informacoes-gerais__alterar-usuario:hover {
+  text-decoration: underline;
+}
+.lateral .lateral__informacoes-gerais .informacoes-gerais__perfil {
+  border-radius: 50%;
+  grid-area: 1/1/3/2;
+  height: 55px;
+  width: 55px;
+}
+.lateral .lateral__corpo .corpo__lista-principal .lista-principal__item .item__titulo {
+  color: #711115;
+  font-weight: 700;
+  margin-top: 1em;
+}
+.lateral .lateral__corpo .corpo__lista-principal .lista-principal__item .item__lista-secundaria {
+  text-indent: 10px;
+}
+.lateral .lateral__corpo .corpo__lista-principal .lista-principal__item .item__lista-secundaria .lista-secundaria__item {
+  line-height: 1.5em;
+}
+.lateral .lateral__corpo .corpo__lista-principal .lista-principal__item .item__lista-secundaria .lista-secundaria__item .item__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+.lateral .lateral__corpo .corpo__lista-principal .lista-principal__item .item__lista-secundaria .lista-secundaria__item .item__link:hover {
+  text-decoration: underline;
+}
+
+.ativo {
+  left: 0px;
 }/*# sourceMappingURL=style.css.map */

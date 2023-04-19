@@ -1,10 +1,12 @@
 @import "../../../abstract/variaveis";
 
-.cabecalho {
+.cabecalho-home {
     align-items: center;
+    background-image: $cor-cabecalho;
     display: flex;
-    justify-content: space-between;
     font-size: 12px;
+    justify-content: space-between;
+    padding: 1em;
     .cabecalho__menu-hamburguer {
         .menu-hamburguer__icone {
             background: url("../img/icones/menu-hamburguer.png") no-repeat center center / cover;

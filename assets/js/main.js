@@ -18,14 +18,9 @@ formularioLogin.addEventListener("submit", async evento => {
 
         window.location.replace("./assets/paginas/home.html");
     }else {
-        imprimeErro("Usuário ou senha incorretos");
-
-        console.log(emailDigitado.value)
-        console.log(senhaDigitada.value)
-        
+        imprimeErro("Usuário ou senha incorretos");        
 
         emailDigitado.value = "";
         senhaDigitada.value = "";
     }
 });
-

@@ -13,8 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="cabecalho">
-            <div class="cabecalho__menu-hamburguer">
+        <header class="cabecalho-home">
+            <div class="cabecalho__menu-hamburguer" data-modificador-estado>
                 <i class="menu-hamburguer__icone"></i>
             </div>
             <div class="cabecalho__informacoes-gerais">
@@ -22,11 +22,70 @@
                     Dr. 
                     <span class="nome">Fulana</span>
                 </p>
-                <a href="#" class="informacoes-gerais__sair">Sair</a>
+                <a href="../../index.html" rel="prev follow" target="_self" class="informacoes-gerais__sair">Sair</a>
                 <img src="../img/perfil/medico.jpg" alt="Perfil da pessoa que está logada" class="informacoes-gerais__perfil">
             </div>
         </header>
-        <main class="principal">
+        <aside class="lateral" data-menu-lateral>
+            <section class="lateral__informacoes-gerais">
+                <p class="informacoes-gerais__nome">
+                    Dr. 
+                    <span class="nome">Fulana</span>
+                </p>
+                <a href="#" rel="next nofollow" target="_self" class="informacoes-gerais__alterar-usuario">Alterar usuário</a>
+                <img src="../img/perfil/medico.jpg" alt="Perfil da pessoa que está logada" class="informacoes-gerais__perfil">
+            </section>
+            <section class="lateral__corpo">
+                <ul class="corpo__lista-principal">
+                    <li class="lista-principal__item">
+                        <h2 class="item__titulo">Perfil</h2>
+                        <ul class="item__lista-secundaria">
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Mudar foto de perfil</a>
+                            </li>
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Alterar dados</a>
+                            </li>
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Cadastrar usuário</a>
+                            </li>
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Alterar senha</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista-principal__item">
+                        <h2 class="item__titulo">Configurações</h2>
+                        <ul class="item__lista-secundaria">
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Visual</a>
+                            </li>
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Notificações</a>
+                            </li>
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Usabilidade</a>
+                            </li>
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Termos de uso</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista-principal__item">
+                        <h2 class="item__titulo">Ajuda</h2>
+                        <ul class="item__lista-secundaria">
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Informações</a>
+                            </li>
+                            <li class="lista-secundaria__item">
+                                <a href="#" rel="next nofollow" target="_self" class="item__link">Ajuda</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <main class="principal" data-modificador-estado>
             <!-- Aqui irão os títulos -->
             <section class="principal__consultas"></section>
             <section class="principal__tarefas"></section>
@@ -34,5 +93,6 @@
         <footer class="rodape">
             <!-- Aqui vão os ícones de navegação entre as páginas -->
         </footer>
+        <script type="text/javascript" src="../js/home.js"></script>
     </body>
 </html>
