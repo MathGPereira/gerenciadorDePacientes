@@ -350,4 +350,8 @@ html, body {
 }
 .principal .principal__tarefas .tarefas__ver-tudo:hover {
   text-decoration: underline;
+}
+
+.rodape .rodape__icone .icone-home {
+  background: url("../img/icones/botao-home-branco.png") no-repeat center center/cover;
 }/*# sourceMappingURL=style.css.map */
