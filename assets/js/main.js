@@ -6,17 +6,26 @@ let senhaDigitada = document.querySelector("[data-senha]");
 const sistema = new Sistema();
 const formularioLogin = document.querySelector("[data-login-formulario]");
 
+window.addEventListener("load", () => {
+    sistema.autoComplete();
+});
+
 formularioLogin.addEventListener("submit", async evento => {
     evento.preventDefault();
 
     if(await sistema.validaLogin(emailDigitado.value, senhaDigitada.value)) {
-        sistema.gravaLocalStorage(emailDigitado, senhaDigitada);
+        sistema.gravaLocalStorage(emailDigitado.value, senhaDigitada.value);
+
         window.location.href = "./assets/paginas/home.html";
     }else {
         imprimeErro("Usuário ou senha incorretos");
-    }
 
-    emailDigitado.value = "";
-    senhaDigitada.value = "";
+        console.log(emailDigitado.value)
+        console.log(senhaDigitada.value)
+        
+
+        emailDigitado.value = "";
+        senhaDigitada.value = "";
+    }
 });
 

@@ -48,8 +48,25 @@ export default class Sistema {
         return boolean;
     }
 
-    gravaLocalStorage() {
-        window.localStorage.setItem()
+    gravaLocalStorage(ultimoEmail, ultimaSenha) {
+        window.localStorage.clear();
+        window.localStorage.setItem("info", JSON.stringify(
+            {
+                "email": ultimoEmail, 
+                "senha": ultimaSenha
+            }
+        ));
+    }
+
+    autoComplete() {
+        if(window.localStorage.length > 0) {
+            const {email:ultimoEmailDigitado, senha:ultimaSenhaDigitada} = JSON.parse(window.localStorage.getItem("info"));
+            const email = document.querySelector("[data-email]");
+            const senha = document.querySelector("[data-senha]");
+            
+            email.value = ultimoEmailDigitado;
+            senha.value = ultimaSenhaDigitada;
+        }
     }
 
     static async getSetDb(metodo, cadastro, tipoEntrada) {
