@@ -37,4 +37,13 @@
     #input-senha {
         margin-top: 1.5em;
     }
+    .erro-mensagem {
+        background-color: #ff0000a6;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #690000;
+        font-weight: 700;
+        margin: 1em 0 .5em;
+        padding: .5em;
+    }
 }

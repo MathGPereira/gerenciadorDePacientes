@@ -48,6 +48,10 @@ export default class Sistema {
         return boolean;
     }
 
+    gravaLocalStorage() {
+        window.localStorage.setItem()
+    }
+
     static async getSetDb(metodo, cadastro, tipoEntrada) {
         let requisicao;
         const caminho = `http://localhost:3000/${tipoEntrada}`;

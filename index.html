@@ -21,10 +21,11 @@
             <form action="#" method="POST" autocomplete="on" id="login" class="principal__login" data-login-formulario>
                 <fieldset form="login" class="login__agrupamento">
                     <legend class="agrupamento__titulo">Login</legend>
+                    <span class="login-erro inativo" data-mensagem-erro></span>
                     <label for="email" class="agrupamento__rotulo">E-mail</label>
                     <input type="email" name="email" id="email" class="agrupamento__input" placeholder="Email" required data-email>
                     <label for="senha" id="input-senha" class="agrupamento__rotulo">Senha</label>
-                    <input type="password" name="senha" id="senha" class="agrupamento__input" placeholder="Senha" required minlength="8" pattern="[a-zA-Z0-9]+[!@#$%&*?|/]?" data-senha>
+                    <input type="password" name="senha" id="senha" class="agrupamento__input" placeholder="Senha" required minlength="8" data-senha>
                 </fieldset>
                 <a href="#" rel="next follow" target="_self" class="login__trocar-senha login__link">Esqueci minha senha</a>
                 <button type="submit" form="login" name="entrar" class="login__entrar">Entrar</button>

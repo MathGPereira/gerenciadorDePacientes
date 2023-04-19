@@ -1,4 +1,5 @@
 import Sistema from "./classes/Sistema.js";
+import { imprimeErro } from "./auxiliar/funcoesAuxiliares.js";
 
 let emailDigitado = document.querySelector("[data-email]");
 let senhaDigitada = document.querySelector("[data-senha]");
@@ -9,11 +10,13 @@ formularioLogin.addEventListener("submit", async evento => {
     evento.preventDefault();
 
     if(await sistema.validaLogin(emailDigitado.value, senhaDigitada.value)) {
-        console.log("true")
-        //window.location.href = "./assets/paginas/home.html";
+        sistema.gravaLocalStorage(emailDigitado, senhaDigitada);
+        window.location.href = "./assets/paginas/home.html";
+    }else {
+        imprimeErro("Usuário ou senha incorretos");
     }
 
-    emailDigitado = "";
-    senhaDigitada = "";
+    emailDigitado.value = "";
+    senhaDigitada.value = "";
 });
 
