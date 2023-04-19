@@ -8,163 +8,47 @@ html, body {
 }
 
 .cabecalho {
-  background-image: linear-gradient(to right, #ED2728 10%, #711115);
-  height: auto;
-  letter-spacing: 3px;
-  padding: 1.5em 1em 1em;
-  text-align: center;
-}
-.cabecalho__titulo {
-  color: #FFFFFF;
-  font-size: 32px;
-  font-weight: 700;
-  padding-bottom: 1em;
-}
-.cabecalho__foto-perfil {
-  border-radius: 100%;
-  height: 80px;
-  width: 80px;
-}
-
-.principal {
-  box-sizing: border-box;
-  padding: 1em;
-}
-
-.principal__login {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  padding: 2em 1em 1em;
-  text-align: center;
-}
-.principal__login .login__link {
-  display: block;
-  margin-bottom: 1em;
-}
-.principal__login .login__trocar-senha {
-  color: #ED2728;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: right;
-  text-decoration: none;
-}
-.principal__login .login__trocar-senha:hover {
-  text-decoration: underline;
-}
-.principal__login .login__entrar {
-  background-image: linear-gradient(to right, #D62324, #711115);
-  border: none;
-  border-radius: 10px;
-  color: #FFFFFF;
-  padding: 10px 2em;
-  font-size: 20px;
-  font-weight: 700;
-}
-.principal__login .login__criar-conta {
-  color: #711115;
-  cursor: pointer;
-  font-size: 22px;
-  font-weight: 700;
-  margin: 1em 0 0 0;
-  text-decoration: none;
-}
-.principal__login .login__criar-conta:hover {
-  text-decoration: underline;
-}
-
-.login__agrupamento {
-  box-sizing: border-box;
-  border: none;
-  text-align: center;
-}
-.login__agrupamento .agrupamento__titulo {
-  color: #ED2728;
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 0.2em;
-}
-.login__agrupamento .agrupamento__rotulo {
-  color: #701414;
-  cursor: pointer;
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-  text-align: left;
-}
-.login__agrupamento .agrupamento__input {
-  background-color: #F3F3F3;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: none;
-  padding: 1em;
-  width: 90%;
-}
-.login__agrupamento .agrupamento__input::-moz-placeholder {
-  font-size: 18px;
-  text-align: center;
-}
-.login__agrupamento .agrupamento__input::placeholder {
-  font-size: 18px;
-  text-align: center;
-}
-.login__agrupamento .agrupamento__input:focus {
-  outline: auto darkred;
-}
-.login__agrupamento #input-senha {
-  margin-top: 1.5em;
-}
-.login__agrupamento .erro-mensagem {
-  background-color: rgba(255, 0, 0, 0.6509803922);
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: #690000;
-  font-weight: 700;
-  margin: 1em 0 0.5em;
-  padding: 0.5em;
-}
-
-.cabecalho-home {
   align-items: center;
-  background-image: linear-gradient(to right, #ED2728 10%, #711115);
+  background-image: linear-gradient(to right, #ED2728 10%, #701414);
   display: flex;
+  flex-direction: row;
   font-size: 12px;
+  height: auto;
   justify-content: space-between;
   padding: 1em;
 }
-.cabecalho-home .cabecalho__menu-hamburguer .menu-hamburguer__icone {
+.cabecalho .cabecalho__menu-hamburguer .menu-hamburguer__icone {
   background: url("../img/icones/menu-hamburguer.png") no-repeat center center/cover;
   height: 32px;
   width: 32px;
 }
-.cabecalho-home .cabecalho__informacoes-gerais {
+.cabecalho .cabecalho__informacoes-gerais {
   color: #FFFFFF;
   -moz-column-gap: 5px;
        column-gap: 5px;
   display: grid;
   grid-template: repeat(2, auto)/auto 1fr;
 }
-.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__nome {
+.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__nome {
   align-self: end;
   font-size: 16px;
   font-weight: 700;
   grid-area: 1/1/2/2;
 }
-.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__perfil {
+.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__perfil {
   border-radius: 50%;
   grid-area: 1/2/3/3;
   height: 55px;
   width: 55px;
 }
-.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__sair {
+.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__sair {
   align-self: start;
   color: #FFFFFF;
   justify-self: end;
   text-decoration: none;
   text-transform: lowercase;
 }
-.cabecalho-home .cabecalho__informacoes-gerais .informacoes-gerais__sair:hover {
+.cabecalho .cabecalho__informacoes-gerais .informacoes-gerais__sair:hover {
   text-decoration: underline;
 }
 
@@ -208,7 +92,7 @@ html, body {
   width: 55px;
 }
 .lateral .lateral__corpo .corpo__lista-principal .lista-principal__item .item__titulo {
-  color: #711115;
+  color: #701414;
   font-weight: 700;
   margin-top: 1em;
 }
@@ -232,7 +116,7 @@ html, body {
 }
 
 .rodape {
-  background-image: linear-gradient(to right, #ED2728 10%, #711115);
+  background-image: linear-gradient(to right, #ED2728 10%, #701414);
 }
 .rodape .rodape__icone {
   align-items: center;
@@ -255,4 +139,123 @@ html, body {
 }
 .rodape .rodape__icone .icone-tarefas {
   background: url("../img/icones/tarefas.png") no-repeat center center/cover;
+}
+
+.cabecalho-login {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 3px;
+  padding: 1.5em 1em 1em;
+  text-align: center;
+}
+
+.cabecalho__titulo {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+.cabecalho__foto-perfil {
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+}
+
+.login__agrupamento {
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+}
+.login__agrupamento .agrupamento__titulo {
+  color: #ED2728;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.login__agrupamento .agrupamento__rotulo {
+  color: #701414;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.login__agrupamento .agrupamento__input {
+  background-color: #F3F3F3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  padding: 1em;
+  width: 90%;
+}
+.login__agrupamento .agrupamento__input::-moz-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.login__agrupamento .agrupamento__input::placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.login__agrupamento .agrupamento__input:focus {
+  outline: auto #701414;
+}
+.login__agrupamento #input-senha {
+  margin-top: 1.5em;
+}
+.login__agrupamento .erro-mensagem {
+  background-color: rgba(255, 0, 0, 0.6509803922);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #690000;
+  font-weight: 700;
+  margin: 1em 0 0.5em;
+  padding: 0.5em;
+}
+
+.principal__login {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 2em 1em 1em;
+  text-align: center;
+}
+.principal__login .login__link {
+  display: block;
+  margin-bottom: 1em;
+}
+.principal__login .login__trocar-senha {
+  color: #ED2728;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  text-decoration: none;
+}
+.principal__login .login__trocar-senha:hover {
+  text-decoration: underline;
+}
+.principal__login .login__entrar {
+  background-image: linear-gradient(to right, #ED2728, #701414);
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 10px 2em;
+  font-size: 20px;
+  font-weight: 700;
+}
+.principal__login .login__criar-conta {
+  color: #701414;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 1em 0 0 0;
+  text-decoration: none;
+}
+.principal__login .login__criar-conta:hover {
+  text-decoration: underline;
+}
+
+.principal {
+  box-sizing: border-box;
+  padding: 1em;
 }/*# sourceMappingURL=style.css.map */

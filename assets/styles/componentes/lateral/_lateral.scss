@@ -1,8 +1,8 @@
-@import "../../../abstract/variaveis";
+@import "../../abstract/variaveis";
 
 .lateral {
-    background-color: #FFFFFF;
-    border-right: 1px solid #ED2728;
+    background-color: $branco;
+    border-right: 1px solid $cor-secundaria;
     box-sizing: border-box;
     height: 100vh;
     left: -9999px;
@@ -21,7 +21,7 @@
             font-weight: 700;
         }
         .informacoes-gerais__alterar-usuario {
-            color: #ED2728;
+            color: $cor-secundaria;
             cursor: pointer;
             text-decoration: none;
             font-size: 14px;
@@ -41,7 +41,7 @@
         .corpo__lista-principal {
             .lista-principal__item {
                 .item__titulo {
-                    color: #711115;
+                    color: $cor-primaria;
                     font-weight: 700;
                     margin-top: 1em;
                 }
@@ -52,7 +52,7 @@
                         .item__link {
                             cursor: pointer;
                             text-decoration: none;
-                            color: #000000;
+                            color: $preto;
                             &:hover {
                                 text-decoration: underline;
                             }

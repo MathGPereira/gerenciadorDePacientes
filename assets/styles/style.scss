@@ -1,15 +1,16 @@
-// Importes dos arquivos globais
+// Importações dos arquivos base e das variáveis de estilos
 @import "./abstract/base";
 @import "./abstract/variaveis";
 
-// Importes dos arquivos da aba de Login
-@import "./componentes/login/cabecalho/cabecalho";
-@import "./componentes/login/principal/principal";
-@import "./componentes/login/principal/formulario";
-@import "./componentes/login/principal/agrupamento";
+// Importações dos arquivos gerais do projeto
+@import "./componentes/cabecalho/cabecalho";
+@import "./componentes/lateral/lateral";
+@import "./componentes/rodape/rodape";
 
-// Importes dos arquivos da aba Home
-@import "./componentes/home/cabecalho/cabecalho";
-@import "./componentes/home/lateral/lateral";
-@import "./componentes/home/rodape/rodape";
-
+// Importações dos arquivos específicos do projeto
+    // Página de login
+        @import "./componentes/login/cabecalho/cabecalho";
+        @import "./componentes/login/principal/agrupamento";
+        @import "./componentes/login/principal/formulario";
+        @import "./componentes/login/principal/principal";
+    // Página home

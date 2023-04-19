@@ -1,7 +1,7 @@
-@import "../../../abstract/variaveis";
+@import "../../abstract/variaveis";
 
 .rodape {
-    background-image: $cor-rodape;
+    background-image: linear-gradient(to right, $cor-secundaria 10%, $cor-primaria);
     .rodape__icone {
         align-items: center;
         display: flex;

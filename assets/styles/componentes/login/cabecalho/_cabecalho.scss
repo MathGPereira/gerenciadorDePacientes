@@ -1,17 +1,20 @@
 @import "../../../abstract/variaveis";
 
-.cabecalho {
-    background-image: $cor-cabecalho;
-    height: auto;
+.cabecalho-login {
+    display: flex;
+    flex-direction: column;
     letter-spacing: 3px;
     padding: 1.5em 1em 1em;
     text-align: center;
+}
+
+.cabecalho {
     &__titulo {
-        color: $color-cabecalho;
-        font-size: $font-size-cabecalho;
-        font-weight: $font-weight-cabecalho;
+        color: $branco;
+        font-size: 32px;
+        font-weight: 700;
         padding-bottom: 1em;
-    };
+    }
     &__foto-perfil {
         border-radius: 100%;
         height: 80px;

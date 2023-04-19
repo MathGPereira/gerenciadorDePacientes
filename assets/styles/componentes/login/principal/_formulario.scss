@@ -1,7 +1,7 @@
 @import "../../../abstract/variaveis";
 
 .principal__login {
-    background-color: $background-formulario;
+    background-color: $branco;
     border-radius: 10px;
     padding: 2em 1em 1em;
     text-align: center;
@@ -10,10 +10,10 @@
         margin-bottom: 1em;
     }
     .login__trocar-senha {
-        color: $color-link-trocar-senha;
+        color: $cor-secundaria;
         cursor: pointer;
-        font-size: $font-size-trocar-senha;
-        font-weight: $font-weight-trocar-senha;
+        font-size: 14px;
+        font-weight: 500;
         text-align: right;
         text-decoration: none;
         &:hover {
@@ -21,19 +21,19 @@
         }
     }
     .login__entrar {
-        background-image: $backgrund-botao;
+        background-image: linear-gradient(to right, $cor-secundaria, $cor-primaria);
         border: none;
         border-radius: 10px;
-        color: $color-botao;
+        color: $branco;
         padding: 10px 2em;
         font-size: 20px;
-        font-weight: $font-weight-botao;
+        font-weight: 700;
     }
     .login__criar-conta {
-        color: $color-link-criar-conta;
+        color: $cor-primaria;
         cursor: pointer;
-        font-size: $font-size-link-criar-conta;
-        font-weight: $font-weight-link-criar-conta;
+        font-size: 22px;
+        font-weight: 700;
         margin: 1em 0 0 0;
         text-decoration: none;
         &:hover {

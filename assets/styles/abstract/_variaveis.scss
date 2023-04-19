@@ -7,44 +7,9 @@
     $line-heigth-principal: 1.2em;
 // Variáveis gerais do arquivo
 
-// Aba Login
-    // Variáveis do cabeçalho
-        $cor-cabecalho: linear-gradient(to right, #ED2728 10%, #711115);
-        $font-size-cabecalho: 32px;
-        $font-weight-cabecalho: 700;
-        $color-cabecalho: #FFFFFF;
-    // Variáveis do cabeçalho
-
-    // Variáveis do principal
-        // Variáveis do formulário
-            $background-formulario: #FFFFFF;
-            $color-link-trocar-senha: #ED2728;
-            $font-size-trocar-senha: 14px;
-            $font-weight-trocar-senha: 500;
-            $color-link-criar-conta: #711115;
-            $font-size-link-criar-conta: 22px;
-            $font-weight-link-criar-conta: 700;
-            // Variáveis título
-                $color-titulo: #ED2728;
-                $font-size-titulo: 50px;
-                $font-weight-titulo: 700;
-            // Variáveis título
-            // Variáveis rótulos
-                $color-rotulo: #701414;
-                $font-weight-rotulo-formulario: 500;
-            // Variáveis rótulos
-            // Variáveis input
-                $background-input: #F3F3F3;
-                $font-size-placeholder: 18px;
-            // Variáveis input
-            // Variáveis botao
-                $backgrund-botao: linear-gradient(to right, #D62324, #711115);
-                $color-botao: #FFFFFF;
-                $font-weight-botao: 700;
-            // Variáveis botao
-        // Variáveis do formulário
-    // Variáveis do principal
-    // Variáveis rodapé
-        $cor-rodape: linear-gradient(to right, #ED2728 10%, #711115);
-    // Variáveis rodapé
-// Aba Login
+// Variáveis independentes
+    $preto: #000000;
+    $branco: #FFFFFF;
+    $cor-primaria: #701414;
+    $cor-secundaria: #ED2728;
+// Variáveis independentes

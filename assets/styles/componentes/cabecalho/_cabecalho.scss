@@ -1,10 +1,12 @@
-@import "../../../abstract/variaveis";
+@import "../../abstract/variaveis";
 
-.cabecalho-home {
+.cabecalho {
     align-items: center;
-    background-image: $cor-cabecalho;
+    background-image: linear-gradient(to right, $cor-secundaria 10%, $cor-primaria);;
     display: flex;
+    flex-direction: row;
     font-size: 12px;
+    height: auto;
     justify-content: space-between;
     padding: 1em;
     .cabecalho__menu-hamburguer {
@@ -15,7 +17,7 @@
         }
     }
     .cabecalho__informacoes-gerais {
-        color: #FFFFFF;
+        color: $branco;
         column-gap: 5px;
         display: grid;
         grid-template: repeat(2, auto) / auto 1fr;
@@ -33,7 +35,7 @@
         }
         .informacoes-gerais__sair {
             align-self: start;
-            color: #FFFFFF;
+            color: $branco;
             justify-self: end;
             text-decoration: none;
             text-transform: lowercase;

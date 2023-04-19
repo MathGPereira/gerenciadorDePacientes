@@ -5,21 +5,21 @@
     border: none;
     text-align: center;
     .agrupamento__titulo {
-        color: $color-titulo;
-        font-size: $font-size-titulo;
-        font-weight: $font-weight-titulo;
+        color: $cor-secundaria;
+        font-size: 50px;
+        font-weight: 700;
         margin-bottom: .2em;
     }
     .agrupamento__rotulo {
-        color: $color-rotulo;
+        color: $cor-primaria;
         cursor: pointer;
         display: block;
-        font-weight: $font-weight-rotulo-formulario;
+        font-weight: 500;
         margin-bottom: 5px;
         text-align: left;
     }
     .agrupamento__input {
-        background-color: $background-input;
+        background-color: #F3F3F3;
         border: none;
         border-radius: 10px;
         cursor: pointer;
@@ -27,11 +27,11 @@
         padding: 1em;
         width: 90%;
         &::placeholder {
-            font-size: $font-size-placeholder;
+            font-size: 18px;
             text-align: center;
         }
         &:focus {
-            outline: auto darkred;
+            outline: auto $cor-primaria;
         }
     }
     #input-senha {
