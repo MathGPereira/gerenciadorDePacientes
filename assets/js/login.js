@@ -15,6 +15,7 @@ formularioLogin.addEventListener("submit", async evento => {
 
     if(await sistema.validaLogin(emailDigitado.value, senhaDigitada.value)) {
         sistema.gravaLocalStorage(emailDigitado.value, senhaDigitada.value);
+        sistema.setCache(emailDigitado.value);
 
         window.location.replace("./assets/paginas/home.html");
     }else {

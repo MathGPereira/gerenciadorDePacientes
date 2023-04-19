@@ -8,5 +8,11 @@
       "id": 1,
       "senha": "12345678"
     }
+  ],
+  "cache": [
+    {
+      "email": "matheusgp.mto@outlook.com",
+      "id": 1
+    }
   ]
 }

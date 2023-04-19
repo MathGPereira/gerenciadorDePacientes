@@ -14,7 +14,7 @@ export default class Sistema {
             pessoaCadastrada = new Medico(nome, sobrenome, email, senha);
         }
 
-        await getSetDb("POST", pessoaCadastrada, tipoCadastro);
+        await Sistema.getSetDb("POST", pessoaCadastrada, tipoCadastro);
     }
 
     async getCadastro(id, cadastro, tipoCadastro) {
@@ -24,13 +24,37 @@ export default class Sistema {
             BancoDeDados.forEach(pessoaCadastrada => {
                 if(pessoaCadastrada.id === id && tipoCadastro === "paciente") {
                     const {id, nome, sobrenome, idade, sexo, tratamento, consulta} = pessoaCadastrada;
-                }else if(pessoaCadastrada.id === id && tipoCadastro === "medico") {
+                }else if(pessoaCadastrada.id === tipoInformacao && tipoCadastro === "medico") {
                     const {id, nome, sobrenome, email} = pessoaCadastrada;
+                    nomeDoMedico = nome;
+                    console.log(nomeDoMedico)
                 }
             });
         }else {
             console.log("Não há nenhum paciente com este id cadastrado");
         }
+
+        
+        return nomeDoMedico;
+    }
+
+    async setCache(email) {
+        await Sistema.getSetDb("POST", {email}, "cache");
+    }
+
+    async getCache() {
+        let nomeDoMedico;
+        const [pessoaLogada] = await Sistema.getSetDb("GET", null, "cache");
+        const [medicosCadastrados] = [await Sistema.getSetDb("GET", null, "medico")];
+        const email = pessoaLogada.email;
+
+        medicosCadastrados.forEach((medico, indice) => {
+            if(medico.email === email) {
+                nomeDoMedico = medicosCadastrados[indice].nome;
+            }
+        });
+
+        return nomeDoMedico;        
     }
 
     async validaLogin(emailDigitado, senhaDigitada) {
