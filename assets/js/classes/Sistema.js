@@ -93,6 +93,14 @@ export default class Sistema {
         }
     }
 
+    validaCadastro(senha, confirmaSenha) {
+        if(senha.value !== confirmaSenha.value) {
+            return false;
+        }
+        
+        return true;
+    }
+
     static async getSetDb(metodo, cadastro, tipoEntrada) {
         let requisicao;
         const caminho = `http://localhost:3000/${tipoEntrada}`;

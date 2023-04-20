@@ -394,7 +394,7 @@ html, body {
   color: #ED2728;
   font-size: 50px;
   font-weight: 700;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
 }
 .principal__cadastro .cadastro__agrupamento .agrupamento__rotulo {
   color: #701414;
@@ -411,7 +411,7 @@ html, body {
   cursor: pointer;
   outline: none;
   margin-bottom: 1em;
-  padding: 0.5em;
+  padding: 0.6em;
   width: 90%;
 }
 .principal__cadastro .cadastro__agrupamento .agrupamento__input::-moz-placeholder {
@@ -433,4 +433,13 @@ html, body {
   padding: 10px 2em;
   font-size: 20px;
   font-weight: 700;
+}
+.principal__cadastro .erro-mensagem {
+  background-color: rgba(255, 0, 0, 0.6509803922);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #690000;
+  font-weight: 700;
+  margin: 0.5em 0;
+  padding: 0.5em;
 }/*# sourceMappingURL=style.css.map */

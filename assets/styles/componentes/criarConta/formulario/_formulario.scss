@@ -13,7 +13,7 @@
             color: $cor-secundaria;
             font-size: 50px;
             font-weight: 700;
-            margin-bottom: .5em;
+            margin: .5em 0;
         }
         .agrupamento__rotulo {
             color: $cor-primaria;
@@ -30,7 +30,7 @@
             cursor: pointer;
             outline: none;
             margin-bottom: 1em;
-            padding: .5em;
+            padding: .6em;
             width: 90%;
             &::placeholder {
                 font-size: 18px;
@@ -49,5 +49,14 @@
         padding: 10px 2em;
         font-size: 20px;
         font-weight: 700;
+    }
+    .erro-mensagem {
+        background-color: #ff0000a6;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #690000;
+        font-weight: 700;
+        margin: .5em 0;
+        padding: .5em;
     }
 }
