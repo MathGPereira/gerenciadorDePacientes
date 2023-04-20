@@ -13,6 +13,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Criar conta</h1>
+        <header class="cabecalho cabecalho__cria-conta">
+            <h1 class="cabecalho__titulo">Criar Conta</h1>
+            <a href="../../index.html" rel="prev follow" target="_self" class="cabecalho__link">Voltar</a>
+        </header>
+        <main class="principal">
+            <form action="#" method="POST" autocomplete="on" id="cadastro" class="principal__cadastro">
+                <fieldset class="cadastro__agrupamento">
+                    <legend class="agrupamento__titulo">Cadastro</legend>
+                    <label for="nome" class="agrupamento__rotulo">Nome</label>
+                    <input type="text" name="nome" id="nome" class="agrupamento__input" placeholder="Nome" required minlength="3">
+                    <label for="sobrenome" class="agrupamento__rotulo">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" class="agrupamento__input" placeholder="Sobrenome" required minlength="2">
+                    <label for="email" class="agrupamento__rotulo">E-mail</label>
+                    <input type="email" name="email" id="email" class="agrupamento__input" placeholder="E-mail">
+                    <label for="senha" class="agrupamento__rotulo">Senha</label>
+                    <input type="password" name="senha" id="senha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********">
+                    <label for="confirmaSenha" class="agrupamento__rotulo">Confirmação de Senha</label>
+                    <input type="password" name="confirmaSenha" id="confirmaSenha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********">
+                </fieldset>
+                <button type="submit" class="cadastro__cadastrar">Cadastrar</button>
+            </form>
+        </main>
     </body>
 </html>

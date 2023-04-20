@@ -354,4 +354,83 @@ html, body {
 
 .rodape .rodape__icone .icone-home {
   background: url("../img/icones/botao-home-branco.png") no-repeat center center/cover;
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.cabecalho .cabecalho__titulo {
+  padding: 0;
+}
+.cabecalho .cabecalho__link {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 0.5em;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+.cabecalho .cabecalho__link:hover {
+  background-color: #FFFFFF;
+  color: #701414;
+  border-color: #701414;
+  text-decoration: underline;
+}
+
+.principal__cadastro {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1em;
+}
+.principal__cadastro .cadastro__agrupamento {
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+}
+.principal__cadastro .cadastro__agrupamento .agrupamento__titulo {
+  color: #ED2728;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.principal__cadastro .cadastro__agrupamento .agrupamento__rotulo {
+  color: #701414;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.principal__cadastro .cadastro__agrupamento .agrupamento__input {
+  background-color: #F3F3F3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 90%;
+}
+.principal__cadastro .cadastro__agrupamento .agrupamento__input::-moz-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.principal__cadastro .cadastro__agrupamento .agrupamento__input::placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.principal__cadastro .cadastro__agrupamento .agrupamento__input:focus {
+  outline: auto #701414;
+}
+.principal__cadastro .cadastro__cadastrar {
+  background-image: linear-gradient(to right, #ED2728, #701414);
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 10px 2em;
+  font-size: 20px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

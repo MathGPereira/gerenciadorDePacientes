@@ -1,0 +1,53 @@
+@import "../../../abstract/variaveis";
+
+.principal__cadastro {
+    background-color: $branco;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 1em;
+    .cadastro__agrupamento {
+        box-sizing: border-box;
+        border: none;
+        text-align: center;
+        .agrupamento__titulo {
+            color: $cor-secundaria;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: .5em;
+        }
+        .agrupamento__rotulo {
+            color: $cor-primaria;
+            cursor: pointer;
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        .agrupamento__input {
+            background-color: #F3F3F3;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 1em;
+            padding: .5em;
+            width: 90%;
+            &::placeholder {
+                font-size: 18px;
+                text-align: center;
+            }
+            &:focus {
+                outline: auto $cor-primaria;
+            }
+        }
+    }
+    .cadastro__cadastrar {
+        background-image: linear-gradient(to right, $cor-secundaria, $cor-primaria);
+        border: none;
+        border-radius: 10px;
+        color: $branco;
+        padding: 10px 2em;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
