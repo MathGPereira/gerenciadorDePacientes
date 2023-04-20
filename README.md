@@ -6,18 +6,41 @@
 Este proj
 
 ## Sumário
-1. [Configurações](#configuracao)
+
+1. [Tecnologias usadas](#tecnologias)
+2. [Contatos](#contato)
+3. [Deploy](#deploy)
+4. [Configurações](#configuracao)
     * Instalação do Node.js
         * [Windows](#instalaNodeNoWindows)
         * [Mac](#instalaNodeNoMac)
         * [Liinux](#instalaNodeNoLinux)
     * [Instalando e executando o json-server](#instalaExecutaJsonServer)
-2. [Tecnologias usadas](#tecnologias)
-3. [Contatos](#contato)
-4. [Deploy](#deploy)
 5. [Problemas e Soluções](#problemaSolucao)
     * [Erro ao executar o npm](#erroNPM)
     * [Erro ao executar o Json-server](#erroJsonServer)
+
+<a id="tecnologias"></a>
+
+## Tecnologias
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Git](https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white)
+
+<a id="contato"></a>
+
+## Contato
+[![E-mail](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](matheusgp.mto@outlook.com)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheuspereiradevfront/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MathGPereira)
+
+<a id="deploy"></a>
+
+## Deploy
+- [Vercel](https://gerenciador-de-pacientes.vercel.app/)
 
 <a id="configuracao"></a>
 
@@ -62,28 +85,6 @@ Este proj
     * Através do Prompt de Comando (ou pelo Prompt integrado do Visual Studio Code), entre na pasta do repositório do projeto;
     * Insira o seguinte comando:
     ```json-server --watch db.json```
-
-<a id="tecnologias"></a>
-
-## Tecnologias
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Git](https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white)
-
-<a id="contato"></a>
-
-## Contato
-[![E-mail](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](matheusgp.mto@outlook.com)
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheuspereiradevfront/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MathGPereira)
-
-<a id="deploy"></a>
-
-## Deploy
-- [Vercel](https://gerenciador-de-pacientes.vercel.app/)
 
 <a id="problemaSolucao"></a>
 
