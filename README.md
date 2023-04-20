@@ -12,12 +12,12 @@ Este proj
         * [Mac](#instalaNodeNoMac)
         * [Liinux](#instalaNodeNoLinux)
     * [Instalando e executando o json-server](#instalaExecutaJsonServer)
-2. [Problemas e Soluções](#problemaSolucao)
+2. [Tecnologias usadas](#tecnologias)
+3. [Contatos](#contato)
+4. [Deploy](#deploy)
+5. [Problemas e Soluções](#problemaSolucao)
     * [Erro ao executar o npm](#erroNPM)
     * [Erro ao executar o Json-server](#erroJsonServer)
-3. [Tecnologias usadas](#tecnologias)
-4. [Contatos](#contato)
-5. [Deploy](#deploy)
 
 <a id="configuracao"></a>
 
@@ -63,37 +63,6 @@ Este proj
     * Insira o seguinte comando:
     ```json-server --watch db.json```
 
-<a id="problemaSolucao"></a>
-
-### Possíveis problemas e como resolvê-los
-
-<a id="erroNPM"></a>
-
-1. Ao executar o comando do Node Package Manager (NPM) no passo 3, é possível receber o seguinte erro:
-    > O arquivo XXXX não pode ser carregado porque a execução de scripts foi desabilitada neste sistema
-
-    #### Solução
-    * Abra o seu Power Shell em modo administrador;
-    * Insira o seguinte comando:
-    ```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned```
-
-<a id="erroJsonServer"></a>
-
-2. Ao executar o comando do passo 4. é possível receber o seguinte erro:
-    > json-server : O termo 'json-server' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa
-    operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente 
-    novamente.
-    No linha:1 caractere:1
-    json-server --watch db.json
-        + CategoryInfo          : ObjectNotFound: (json-server:String) [], CommandNotFoundException
-        + FullyQualifiedErrorId : CommandNotFoundException
-
-    #### Solução
-    * Abra o Prompt de Comando (ou o prompt integrado do Visual Studio Code);
-    * Entre na pasta do repositório pelo Prompt;
-    * Insira o comando 
-    ```npx json-server --watch db.json```
-
 <a id="tecnologias"></a>
 
 ## Tecnologias
@@ -115,3 +84,34 @@ Este proj
 
 ## Deploy
 - [Vercel](https://gerenciador-de-pacientes.vercel.app/)
+
+<a id="problemaSolucao"></a>
+
+## Possíveis problemas e como resolvê-los
+
+<a id="erroNPM"></a>
+
+1. Ao executar o comando do Node Package Manager (NPM) no passo 3, é possível receber o seguinte erro:
+    > O arquivo XXXX não pode ser carregado porque a execução de scripts foi desabilitada neste sistema
+
+    ### Solução
+    * Abra o seu Power Shell em modo administrador;
+    * Insira o seguinte comando:
+    ```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned```
+
+<a id="erroJsonServer"></a>
+
+2. Ao executar o comando do passo 4. é possível receber o seguinte erro:
+    > json-server : O termo 'json-server' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa
+    operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente 
+    novamente.
+    No linha:1 caractere:1
+    json-server --watch db.json
+        + CategoryInfo          : ObjectNotFound: (json-server:String) [], CommandNotFoundException
+        + FullyQualifiedErrorId : CommandNotFoundException
+
+    ### Solução
+    * Abra o Prompt de Comando (ou o prompt integrado do Visual Studio Code);
+    * Entre na pasta do repositório pelo Prompt;
+    * Insira o comando 
+    ```npx json-server --watch db.json```
