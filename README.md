@@ -14,7 +14,7 @@ Este proj
     * Instalação do Node.js
         * [Windows](#instalaNodeNoWindows)
         * [Mac](#instalaNodeNoMac)
-        * [Liinux](#instalaNodeNoLinux)
+        * [Linux](#instalaNodeNoLinux)
     * [Instalando e executando o json-server](#instalaExecutaJsonServer)
 5. [Problemas e Soluções](#problemaSolucao)
     * [Erro ao executar o npm](#erroNPM)
