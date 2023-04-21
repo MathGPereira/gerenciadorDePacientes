@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link type="text/css" rel="stylesheet" href="../styles/reset.css">
+        <link type="text/css" rel="stylesheet" href="../styles/style.css">
+        <link type="image/x-icon" rel="shortcut icon" href="../img/icones/icone-navegador.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho cabecalho__cria-conta">
+            <h1 class="cabecalho__titulo">Agenda</h1>
+            <a href="../paginas/pacientes.html" rel="prev follow" target="_self" class="cabecalho__link">Voltar</a>
+        </header>
+        <main class="principal">
+            <form action="#" method="POST" autocomplete="on" id="cadastro" class="principal__cadastro" data-formulario-adiciona-paciente>
+                <fieldset class="cadastro__agrupamento">
+                    <legend class="agrupamento__titulo">Adicionar</legend>
+                    <label for="nome" class="agrupamento__rotulo">Nome</label>
+                    <input type="text" name="nome" id="nome" class="agrupamento__input" placeholder="Nome" required minlength="3" data-input>
+                    <label for="sobrenome" class="agrupamento__rotulo">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" class="agrupamento__input" placeholder="Sobrenome" required minlength="3" data-input>
+                    <label for="idade" class="agrupamento__rotulo">Idade</label>
+                    <input type="number" name="idade" id="idade" class="agrupamento__input" placeholder="Idade" required data-input>
+                    <label for="sexo" class="agrupamento__rotulo">Sexo</label>
+                    <input type="text" name="sexo" id="sexo" class="agrupamento__input" maxlength="1" placeholder="F" required data-input>
+                    <label for="tratamento" class="agrupamento__rotulo">Tratamento</label>
+                    <input type="text" name="tratamento" id="tratamento" class="agrupamento__input" required data-input>
+                    <label for="consulta" class="agrupamento__rotulo">Consulta</label>
+                    <input type="date" name="consulta" id="consulta" class="agrupamento__input" required data-input>
+                </fieldset>
+                <button type="submit" class="cadastro__cadastrar">Cadastrar</button>
+            </form>
+        </main>
+        <script type="module" src="../js/criaPaciente.js"></script>
+    </body>
+</html>
