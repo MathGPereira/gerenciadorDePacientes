@@ -444,25 +444,25 @@ html, body {
   padding: 0.5em;
 }
 
-.principal {
+.principal-sucesso {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.principal__texto {
+.principal-sucesso__texto {
   margin-bottom: 0.5em;
   font-size: 14px;
 }
-.principal__texto .texto__descricao {
+.principal-sucesso__texto .texto__descricao {
   color: #ED2728;
   font-weight: 500;
 }
-.principal__texto .texto__descricao .descricao__tempo {
+.principal-sucesso__texto .texto__descricao .descricao__tempo {
   color: #701414;
   font-weight: 700;
 }
-.principal .sucesso {
+.principal-sucesso .sucesso {
   align-items: center;
   background-color: #FFFFFF;
   border-radius: 15px;
@@ -473,10 +473,10 @@ html, body {
   padding: 2em;
   width: 90%;
 }
-.principal .sucesso__imagem {
+.principal-sucesso .sucesso__imagem {
   width: 50%;
 }
-.principal .sucesso__descricao {
+.principal-sucesso .sucesso__descricao {
   color: #701414;
   font-size: 20px;
   font-weight: 700;

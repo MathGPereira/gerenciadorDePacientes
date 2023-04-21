@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Trocar Senha</title>
         <link type="text/css" rel="stylesheet" href="../styles/reset.css">
         <link type="text/css" rel="stylesheet" href="../styles/style.css">
         <link type="image/x-icon" rel="shortcut icon" href="../img/icones/icone-navegador.png">
@@ -13,6 +13,28 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Trocar senha</h1>
+        <header class="cabecalho cabecalho__cria-conta">
+            <h1 class="cabecalho__titulo">Agenda</h1>
+            <a href="../../index.html" rel="prev follow" target="_self" class="cabecalho__link">Voltar</a>
+        </header>
+        <main class="principal">
+            <form action="#" method="POST" autocomplete="on" id="cadastro" class="principal__cadastro" data-formulario-cadastro>
+                <fieldset class="cadastro__agrupamento">
+                    <legend class="agrupamento__titulo">Cadastro</legend>
+                    <span data-mensagem-erro></span>
+                    <label for="nome" class="agrupamento__rotulo">Nome</label>
+                    <input type="text" name="nome" id="nome" class="agrupamento__input" placeholder="Nome" required minlength="3" data-input>
+                    <label for="sobrenome" class="agrupamento__rotulo">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" class="agrupamento__input" placeholder="Sobrenome" required minlength="2" data-input>
+                    <label for="email" class="agrupamento__rotulo">E-mail</label>
+                    <input type="email" name="email" id="email" class="agrupamento__input" placeholder="E-mail" data-input>
+                    <label for="senha" class="agrupamento__rotulo">Senha</label>
+                    <input type="password" name="senha" id="senha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********" data-senha data-input>
+                    <label for="confirmaSenha" class="agrupamento__rotulo">Confirmação de Senha</label>
+                    <input type="password" name="confirmaSenha" id="confirmaSenha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********" data-senha>
+                </fieldset>
+                <button type="submit" class="cadastro__cadastrar">Cadastrar</button>
+            </form>
+        </main>
     </body>
 </html>
