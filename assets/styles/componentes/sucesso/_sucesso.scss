@@ -1,0 +1,26 @@
+@import "../../abstract/variaveis";
+
+.principal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    .sucesso {
+        align-items: center;
+        background-color: $branco;
+        border-radius: 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+        width: 90%;
+        &__imagem {
+            width: 50%;
+        }
+        &__descricao {
+            color: $cor-primaria;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}

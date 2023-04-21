@@ -3,7 +3,6 @@
 ![Página home](./assets/img/projeto/home.png)
 
 ## Sobre
-Este proj
 
 ## Sumário
 

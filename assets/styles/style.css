@@ -442,4 +442,29 @@ html, body {
   font-weight: 700;
   margin: 0.5em 0;
   padding: 0.5em;
+}
+
+.principal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.principal .sucesso {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  width: 90%;
+}
+.principal .sucesso__imagem {
+  width: 50%;
+}
+.principal .sucesso__descricao {
+  color: #701414;
+  font-size: 20px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
