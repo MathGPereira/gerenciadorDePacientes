@@ -43,13 +43,13 @@
 
 <a id="configuracao"></a>
 
-### Configurações Iniciais
+## Configurações Iniciais
 
-#### Instalação do Node.js
+### Instalação do Node.js
 
 <a id="instalaNodeNoWindows"></a>
 
-##### Windows
+#### Windows
 * Acessar o site oficial do [Node.js](https://nodejs.org/en);
 * Baixar a versão mais recente;
 * No Prompt de Comando insira:
@@ -57,7 +57,7 @@
 
 <a id="instalaNodeNoMac"></a>
 
-##### Mac
+#### Mac
 * No terminal do Mc, insira os seguintes comandos:
     1. ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"```;
     2. ```brew update```;
@@ -66,7 +66,7 @@
 
 <a id="instalaNodeNoLinux"></a>
 
-##### Linux
+#### Linux
 * No terminal do Linux, insira os seguintes comandos:
     1. ```curl -sL https://deb.nodesource.com/setup\_13.x | sudo -E bash -```;
     2. ```sudo apt install nodejs```;
