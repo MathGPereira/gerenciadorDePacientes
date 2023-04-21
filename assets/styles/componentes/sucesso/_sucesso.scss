@@ -3,7 +3,20 @@
 .principal {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    &__texto {
+        margin-bottom: .5em;
+        font-size: 14px;
+        .texto__descricao {
+            color: $cor-secundaria;
+            font-weight: 500;
+            .descricao__tempo {
+                color: $cor-primaria;
+                font-weight: 700;
+            }
+        }
+    }
     .sucesso {
         align-items: center;
         background-color: $branco;

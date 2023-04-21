@@ -447,7 +447,20 @@ html, body {
 .principal {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+.principal__texto {
+  margin-bottom: 0.5em;
+  font-size: 14px;
+}
+.principal__texto .texto__descricao {
+  color: #ED2728;
+  font-weight: 500;
+}
+.principal__texto .texto__descricao .descricao__tempo {
+  color: #701414;
+  font-weight: 700;
 }
 .principal .sucesso {
   align-items: center;

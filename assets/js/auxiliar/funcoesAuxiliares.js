@@ -8,3 +8,7 @@ export function imprimeErro(mensagemDeErro) {
 
     span.appendChild(p);
 }
+
+export function contarSegundos(tag) {
+    tag.innerHTML -= 1;
+}
