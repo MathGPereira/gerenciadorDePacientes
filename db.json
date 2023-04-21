@@ -9,5 +9,14 @@
       "id": 1
     }
   ],
-  "cache": []
+  "cache": [
+    {
+      "email": "matheusgp.mto@outlook.com",
+      "id": 1
+    },
+    {
+      "email": "matheusgp.mto@outlook.com",
+      "id": 2
+    }
+  ]
 }
