@@ -1,0 +1,79 @@
+@import "../../abstract/variaveis";
+
+.principal__consultas {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 7px;
+    .consultas__cabecalho {
+        align-items: center;
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(3, auto);
+        row-gap: 7px;
+        .consulta__titulo {
+            font-size: 30px;
+            font-weight: 700;
+            grid-area: 1/2/2/4;
+        }
+        .cabecalho__imagem-paciente {
+            border-radius: 50%;
+            grid-area: 1/1/3/2;
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .consultas__corpo {
+        .corpo__tratamento {
+            font-weight: 700;
+        }
+        .corpo__proxima-consulta {
+            font-weight: 700;
+            .consulta {
+                color: $cor-primaria;
+            }
+        }
+    }
+    .consultas__rodape {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: 700;
+        .rodape__botao {
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .consultas__visualizar {
+            color: $preto;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .rodape__excluir {
+            color: $cor-primaria;
+        }
+    }
+}
+
+.principal {
+    .principal__paciente {
+        padding: 1em;
+    }
+    .principal__adicionar-paciente {
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: $cor-primaria;
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        &::before {
+            content: url("../img/icones/adiciona-paciente.png");
+            margin-right: 1em;
+        }
+    }
+}

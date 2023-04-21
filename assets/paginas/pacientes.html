@@ -87,8 +87,9 @@
         </aside>
         <main class="principal" data-modificador-estado="principal">
             <h1 class="principal__titulo">Pacientes</h1>
-            <section class="principal__consultas">
+            <section class="principal__consultas principal__paciente">
                 <div class="consultas__cabecalho">
+                    <img src="../img/perfil/perfil.avif" alt="" class="cabecalho__imagem-paciente">
                     <h2 class="consulta__titulo">Rogério da Silva</h2>
                     <p class="consulta__idade">
                         Idade:
@@ -109,10 +110,11 @@
                 </div>
                 <div class="consultas__rodape">
                     <a href="#" class="consultas__visualizar" target="_self" rel="next nofollow">Visualizar</a>
-                    <a href="#" class="consultas__visualizar" target="_self" rel="next nofollow">Alterar</a>
-                    <a href="#" class="consultas__visualizar" target="_self" rel="next nofollow">Excluir</a>
+                    <button class="rodape__botao">Alterar</button>
+                    <button class="rodape__botao rodape__excluir">Excluir</button>
                 </div>
             </section>
+            <button class="principal__adicionar-paciente">Adicionar novo paciente</button>
         </main>
         <footer class="rodape">
             <div class="rodape__icone">
