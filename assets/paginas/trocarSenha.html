@@ -18,23 +18,20 @@
             <a href="../../index.html" rel="prev follow" target="_self" class="cabecalho__link">Voltar</a>
         </header>
         <main class="principal">
-            <form action="#" method="POST" autocomplete="on" id="cadastro" class="principal__cadastro" data-formulario-cadastro>
+            <form action="#" method="POST" autocomplete="on" id="cadastro" class="principal__cadastro" data-formulario-troca-senha>
                 <fieldset class="cadastro__agrupamento">
-                    <legend class="agrupamento__titulo">Cadastro</legend>
+                    <legend class="agrupamento__titulo">Trocar Senha</legend>
                     <span data-mensagem-erro></span>
-                    <label for="nome" class="agrupamento__rotulo">Nome</label>
-                    <input type="text" name="nome" id="nome" class="agrupamento__input" placeholder="Nome" required minlength="3" data-input>
-                    <label for="sobrenome" class="agrupamento__rotulo">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome" class="agrupamento__input" placeholder="Sobrenome" required minlength="2" data-input>
                     <label for="email" class="agrupamento__rotulo">E-mail</label>
-                    <input type="email" name="email" id="email" class="agrupamento__input" placeholder="E-mail" data-input>
-                    <label for="senha" class="agrupamento__rotulo">Senha</label>
-                    <input type="password" name="senha" id="senha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********" data-senha data-input>
+                    <input type="email" name="email" id="email" class="agrupamento__input" required placeholder="E-mail">
+                    <label for="senha" class="agrupamento__rotulo">Nova senha</label>
+                    <input type="password" name="senha" id="senha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********" required data-senha>
                     <label for="confirmaSenha" class="agrupamento__rotulo">Confirmação de Senha</label>
-                    <input type="password" name="confirmaSenha" id="confirmaSenha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********" data-senha>
+                    <input type="password" name="confirmaSenha" id="confirmaSenha" class="agrupamento__input" minlength="8" maxlength="20" placeholder="********" required data-senha>
                 </fieldset>
-                <button type="submit" class="cadastro__cadastrar">Cadastrar</button>
+                <button type="submit" class="cadastro__cadastrar">Trocar</button>
             </form>
         </main>
+        <script type="module" src="../js/atualizaSenha.js"></script>
     </body>
 </html>

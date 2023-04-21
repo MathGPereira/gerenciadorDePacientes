@@ -72,6 +72,12 @@ export default class Sistema {
         return boolean;
     }
 
+    async mudaSenha(senha) {
+        const objetoSenha = {"senha": parseInt(senha)};
+        
+        await Sistema.getSetDb("PUT", objetoSenha, "medico");
+    }
+
     gravaLocalStorage(ultimoEmail, ultimaSenha) {
         window.localStorage.clear();
         window.localStorage.setItem("info", JSON.stringify(
@@ -122,13 +128,13 @@ export default class Sistema {
             option = {
                 method: `${metodo}`
             };
-        }else if(metodo === "POST") {
+        }else if(metodo === "POST" || metodo === "PUT") {
             option = {
                 method: `${metodo}`,
                 headers: {
                     "Content-type": "application/json"
                 },
-                body: `${JSON.stringify(cadastro)}`
+                body: JSON.stringify(cadastro)
             };
         }
         

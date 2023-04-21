@@ -6,6 +6,6 @@ setInterval(() => {
     contarSegundos(tag);
 }, 1000);
 
-setTimeout(() => {
+setInterval(() => {
     window.location.replace("../../index.html");
 }, 4000);

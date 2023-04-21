@@ -13,6 +13,7 @@ formularioCadastro.addEventListener("submit", evento => {
         const [nome, sobrenome, email, senha] = [...document.querySelectorAll("[data-input]")];
 
         sistema.setCadastro(nome.value, sobrenome.value, "medico", email.value, senha.value);
+        console.log("construido")
         window.location.replace("../paginas/cadastroConcluido.html");
     }else {
         senha.value = "";
