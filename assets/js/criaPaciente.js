@@ -10,4 +10,5 @@ formularioAdicionaPaciente.addEventListener("submit", evento => {
     const [nome, sobrenome, idade, sexo, tratamento, consulta] = [...inputsPaciente];
 
     sistema.setCadastro(nome.value, sobrenome.value, "paciente", idade.value, sexo.value, tratamento.value, consulta.value);
+    window.location.href = "../paginas/pacientes.html";
 });

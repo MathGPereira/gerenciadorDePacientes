@@ -17,25 +17,14 @@ export default class Sistema {
         await Sistema.getSetDb("POST", pessoaCadastrada, tipoCadastro);
     }
 
-    async getCadastro(id, cadastro, tipoCadastro) {
+    async getCadastro(cadastro, tipoCadastro) {
         const BancoDeDados = await Sistema.getSetDb("GET", cadastro, tipoCadastro);
 
-        if(JSON.stringify(BancoDeDados).includes(`"id":${id}`)) {
-            BancoDeDados.forEach(pessoaCadastrada => {
-                if(pessoaCadastrada.id === id && tipoCadastro === "paciente") {
-                    const {id, nome, sobrenome, idade, sexo, tratamento, consulta} = pessoaCadastrada;
-                }else if(pessoaCadastrada.id === tipoInformacao && tipoCadastro === "medico") {
-                    const {id, nome, sobrenome, email} = pessoaCadastrada;
-                    nomeDoMedico = nome;
-                    console.log(nomeDoMedico)
-                }
-            });
-        }else {
-            console.log("Não há nenhum paciente com este id cadastrado");
+        if(BancoDeDados.length > 0) {
+            return BancoDeDados;
         }
 
-        
-        return nomeDoMedico;
+        return "Não há nenhum paciente cadastrado no sistema!";
     }
 
     async setCache(email) {
@@ -77,6 +66,10 @@ export default class Sistema {
         
         await Sistema.getSetDb("PUT", objetoSenha, "medico");
     }
+
+    // async imprimeTemplate(template) {
+
+    // }
 
     gravaLocalStorage(ultimoEmail, ultimaSenha) {
         window.localStorage.clear();

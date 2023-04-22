@@ -1,5 +1,13 @@
 {
-  "paciente": [],
+  "paciente": [
+    {
+      "nome": "José",
+      "sobrenome": "Pereira",
+      "idade": 16,
+      "consulta": "2023-12-01",
+      "tratamento": "Dor nas costas"
+    }
+  ],
   "medico": [
     {
       "nome": "Matheus",
@@ -13,14 +21,6 @@
     {
       "email": "matheusgp.mto@outlook.com",
       "id": 1
-    },
-    {
-      "email": "matheusgp.mto@outlook.com",
-      "id": 2
-    },
-    {
-      "email": "matheusgp.mto@outlook.com",
-      "id": 3
     }
   ]
 }
