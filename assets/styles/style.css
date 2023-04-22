@@ -412,6 +412,7 @@ html, body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   justify-content: center;
 }
 .principal-sucesso__texto {
@@ -502,9 +503,6 @@ html, body {
   color: #701414;
 }
 
-.principal {
-  overflow: scroll;
-}
 .principal .principal__paciente {
   padding: 1em;
 }
