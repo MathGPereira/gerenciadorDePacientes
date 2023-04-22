@@ -9,14 +9,12 @@
 
 // Importações dos arquivos específicos do projeto
     // Página de login
-        @import "./componentes/login/cabecalho/cabecalho";
         @import "./componentes/login/principal/agrupamento";
         @import "./componentes/login/principal/formulario";
         @import "./componentes/login/principal/principal";
     // Página home
         @import "./componentes/home/principal";
     // Página criar cadastro
-        @import "./componentes/criarConta/cabecalho/cabecalho";
         @import "./componentes/criarConta/formulario/formulario";
     // Página sucesso
         @import "./componentes/sucesso/sucesso";

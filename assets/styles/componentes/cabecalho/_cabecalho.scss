@@ -44,4 +44,15 @@
             }
         }
     }
+    &__titulo {
+        color: $branco;
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 1em;
+    }
+    &__foto-perfil {
+        border-radius: 100%;
+        height: 80px;
+        width: 80px;
+    }
 }
