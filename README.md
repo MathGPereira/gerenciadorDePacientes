@@ -58,7 +58,7 @@
 <a id="instalaNodeNoMac"></a>
 
 #### Mac
-* No terminal do Mc, insira os seguintes comandos:
+* No terminal do Mac, insira os seguintes comandos:
     1. ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"```;
     2. ```brew update```;
     3. ```brew install node```;
