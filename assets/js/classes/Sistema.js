@@ -49,16 +49,20 @@ export default class Sistema {
     async validaLogin(emailDigitado, senhaDigitada) {
         let boolean;
         const resposta = await Sistema.getSetDb("GET", null, "medico");
+        console.log(resposta)
+        
+        for(let i = 0; i < resposta.length; i++) {
+            const cadastro = resposta[i];
+            const listaTrueFalse = [];
 
-        resposta.map(cadastro => {
             if(cadastro.email === emailDigitado && cadastro.senha === senhaDigitada) {
-                boolean = true;
+                return true;
             }else {
-                boolean = false;
+                listaTrueFalse.push("false");
             }
-        });
+        }
 
-        return boolean;
+        return listaTrueFalse.includes("true");
     }
 
     async mudaSenha(senha) {
