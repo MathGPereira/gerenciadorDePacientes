@@ -76,4 +76,15 @@
             margin-right: 1em;
         }
     }
+    &__artigo {
+        .erro-mensagem {
+            background-color: #ff0000a6;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #690000;
+            font-weight: 700;
+            margin: 1em 0 .5em;
+            padding: .5em;
+        }
+    }
 }

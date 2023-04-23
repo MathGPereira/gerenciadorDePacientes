@@ -519,4 +519,13 @@ html, body {
 .principal .principal__adicionar-paciente::before {
   content: url("../img/icones/adiciona-paciente.png");
   margin-right: 1em;
+}
+.principal__artigo .erro-mensagem {
+  background-color: rgba(255, 0, 0, 0.6509803922);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #690000;
+  font-weight: 700;
+  margin: 1em 0 0.5em;
+  padding: 0.5em;
 }/*# sourceMappingURL=style.css.map */

@@ -24,7 +24,7 @@ export function criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, d
                     <span class="idade">${idade}</span>
                 </p>
                 <p class="consulta__idade">
-                    Idade:
+                    Sexo:
                     <span class="idade">${sexo}</span>
                 </p>
             </div>
@@ -37,7 +37,6 @@ export function criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, d
                     Próxima consulta:
                     <span class="consulta">${data}</span>
                 </p>
-                <p class="corpo__proxima-consulta">Hoje</p>
             </div>
             <div class="consultas__rodape">
                 <a href="#" class="consultas__visualizar" target="_self" rel="next nofollow">Visualizar</a>
