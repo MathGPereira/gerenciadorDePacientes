@@ -1,13 +1,5 @@
 {
-  "paciente": [
-    {
-      "nome": "José",
-      "sobrenome": "Pereira",
-      "idade": 16,
-      "consulta": "2023-12-01",
-      "tratamento": "Dor nas costas"
-    }
-  ],
+  "paciente": [],
   "medico": [
     {
       "nome": "Matheus",
@@ -20,7 +12,7 @@
       "nome": "José",
       "sobrenome": "Alves",
       "email": "jose@outlook.com",
-      "senha": "123456789",
+      "senha": "12345678",
       "id": 2
     }
   ],
@@ -30,24 +22,8 @@
       "id": 1
     },
     {
-      "email": "matheusgp.mto@outlook.com",
+      "email": "jose@outlook.com",
       "id": 2
-    },
-    {
-      "email": "matheusgp.mto@outlook.com",
-      "id": 3
-    },
-    {
-      "email": "jose@outlook.com",
-      "id": 4
-    },
-    {
-      "email": "jose@outlook.com",
-      "id": 5
-    },
-    {
-      "email": "matheusgp.mto@outlook.com",
-      "id": 6
     }
   ]
 }

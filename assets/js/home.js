@@ -8,7 +8,7 @@ const spansNome = document.querySelectorAll("[data-nome]");
 spansNome.forEach(async span => {
     const resposta = await sistema.getCache()
     
-    span.innerHTML = resposta[0];
+    span.innerHTML = resposta;
 });
 
 modificadorDeEstado.forEach(modificador => {

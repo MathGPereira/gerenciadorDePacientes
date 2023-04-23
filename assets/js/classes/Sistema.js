@@ -32,28 +32,25 @@ export default class Sistema {
     }
 
     async getCache() {
-        let nomeDoMedico;
-        const [pessoaLogada] = await Sistema.getSetDb("GET", null, "cache");
-        const [medicosCadastrados] = [await Sistema.getSetDb("GET", null, "medico")];
-        const email = pessoaLogada.email;
+        const [...pessoaLogada] = [...await Sistema.getSetDb("GET", null, "cache")];
+        const email = pessoaLogada[pessoaLogada.length - 1];
+        const banco = await Sistema.getSetDb("GET", null, "medico");
 
-        medicosCadastrados.forEach((medico, indice) => {
-            if(medico.email === email) {
-                nomeDoMedico = medicosCadastrados[indice].nome;
+        for(let i = 0; i < banco.length; i++) {
+            const item = banco[i];
+
+            if(item.email === email.email) {
+                return item.nome;
             }
-        });
-        
-        return [nomeDoMedico, pessoaLogada];        
+        }
     }
 
     async validaLogin(emailDigitado, senhaDigitada) {
-        let boolean;
         const resposta = await Sistema.getSetDb("GET", null, "medico");
-        console.log(resposta)
+        const listaTrueFalse = [];
         
         for(let i = 0; i < resposta.length; i++) {
             const cadastro = resposta[i];
-            const listaTrueFalse = [];
 
             if(cadastro.email === emailDigitado && cadastro.senha === senhaDigitada) {
                 return true;
