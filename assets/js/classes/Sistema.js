@@ -27,6 +27,10 @@ export default class Sistema {
         return "Não há nenhum paciente cadastrado no sistema!";
     }
 
+    async deletaPaciente(id) {
+        await Sistema.getSetDb("DELETE", null, "paciente", id)
+    }
+
     async setCache(email) {
         await Sistema.getSetDb("POST", {email}, "cache");
     }
@@ -68,10 +72,6 @@ export default class Sistema {
         await Sistema.getSetDb("PUT", objetoSenha, "medico");
     }
 
-    // async imprimeTemplate(template) {
-
-    // }
-
     gravaLocalStorage(ultimoEmail, ultimaSenha) {
         window.localStorage.clear();
         window.localStorage.setItem("info", JSON.stringify(
@@ -101,9 +101,9 @@ export default class Sistema {
         return true;
     }
 
-    static async getSetDb(metodo, cadastro, tipoEntrada) {
+    static async getSetDb(metodo, cadastro, tipoEntrada, id="") {
         let requisicao;
-        const caminho = `http://localhost:3000/${tipoEntrada}`;
+        const caminho = `http://localhost:3000/${tipoEntrada}/${id}`;
         
         try {
             requisicao = await fetch(caminho, Sistema.validaOpcoes(metodo, cadastro));
@@ -129,6 +129,10 @@ export default class Sistema {
                     "Content-type": "application/json"
                 },
                 body: JSON.stringify(cadastro)
+            };
+        }else if(metodo === "DELETE") {
+            option = {
+                method: `${metodo}`
             };
         }
         

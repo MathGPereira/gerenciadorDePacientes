@@ -13,7 +13,7 @@ export function contarSegundos(tag) {
     tag.innerHTML -= 1;
 }
 
-export function criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, data) {
+export function criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, data, id) {
     const template = `
         <section class="principal__consultas principal__paciente">
             <div class="consultas__cabecalho">
@@ -41,7 +41,7 @@ export function criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, d
             <div class="consultas__rodape">
                 <a href="#" class="consultas__visualizar" target="_self" rel="next nofollow">Visualizar</a>
                 <button class="rodape__botao">Alterar</button>
-                <button class="rodape__botao rodape__excluir">Excluir</button>
+                <button class="rodape__botao rodape__excluir" data-excluir-paciente data-id="${id}">Excluir</button>
             </div>
         </section>
     `;
@@ -55,10 +55,10 @@ export async function geraPacientesNaTela(sistema) {
     try {
         pacientes = await sistema.getCadastro(null, "paciente");
         pacientes.forEach(paciente => {
-            const {nome, sobrenome, idade, sexo, tratamento, consulta} = paciente;
+            const {nome, sobrenome, idade, sexo, tratamento, consulta, id} = paciente;
             const artigo = document.querySelector("[data-artigo]");
         
-            artigo.innerHTML += criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, consulta);
+            artigo.innerHTML += criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, consulta, id);
         });
     }catch(erro) {
         imprimeErro("Não há nenhum paciente cadastrado atualmente");

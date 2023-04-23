@@ -1,24 +1,5 @@
 {
-  "paciente": [
-    {
-      "nome": "Matheus",
-      "sobrenome": "Pereira",
-      "idade": "25",
-      "sexo": "M",
-      "tratamento": "Dor nas costas",
-      "consulta": "2023-04-18",
-      "id": 1
-    },
-    {
-      "nome": "José",
-      "sobrenome": "Alves",
-      "idade": "35",
-      "sexo": "M",
-      "tratamento": "Dor nos ombros",
-      "consulta": "2023-04-18",
-      "id": 2
-    }
-  ],
+  "paciente": [],
   "medico": [
     {
       "nome": "Matheus",
