@@ -13,15 +13,19 @@ export function contarSegundos(tag) {
     tag.innerHTML -= 1;
 }
 
-export function criaTemplatePaciente(nome, idade, tratamento, data) {
+export function criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, data) {
     const template = `
         <section class="principal__consultas principal__paciente">
             <div class="consultas__cabecalho">
                 <img src="../img/perfil/perfil.avif" alt="" class="cabecalho__imagem-paciente">
-                <h2 class="consulta__titulo">${nome}</h2>
+                <h2 class="consulta__titulo">${nome} ${sobrenome}</h2>
                 <p class="consulta__idade">
                     Idade:
                     <span class="idade">${idade}</span>
+                </p>
+                <p class="consulta__idade">
+                    Idade:
+                    <span class="idade">${sexo}</span>
                 </p>
             </div>
             <div class="consultas__corpo">

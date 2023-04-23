@@ -7,23 +7,12 @@
       "email": "matheusgp.mto@outlook.com",
       "senha": "12345678",
       "id": 1
-    },
-    {
-      "nome": "José",
-      "sobrenome": "Alves",
-      "email": "jose@outlook.com",
-      "senha": "12345678",
-      "id": 2
     }
   ],
   "cache": [
     {
       "email": "matheusgp.mto@outlook.com",
       "id": 1
-    },
-    {
-      "email": "jose@outlook.com",
-      "id": 2
     }
   ]
 }
