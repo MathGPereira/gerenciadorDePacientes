@@ -48,3 +48,19 @@ export function criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, d
 
     return template;
 }
+
+export async function geraPacientesNaTela(sistema) {
+    let pacientes;
+
+    try {
+        pacientes = await sistema.getCadastro(null, "paciente");
+        pacientes.forEach(paciente => {
+            const {nome, sobrenome, idade, sexo, tratamento, consulta} = paciente;
+            const artigo = document.querySelector("[data-artigo]");
+        
+            artigo.innerHTML += criaTemplatePaciente(nome, sobrenome, idade, sexo, tratamento, consulta);
+        });
+    }catch(erro) {
+        imprimeErro("Não há nenhum paciente cadastrado atualmente");
+    }
+}
