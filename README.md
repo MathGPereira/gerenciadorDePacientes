@@ -3,6 +3,12 @@
 ![Página home](./assets/img/projeto/home.png)
 
 ## Sobre
+Este projeto surgiu com a inteção de me desafiar em algo novo, algo que eu nunca havia feito antes.
+Então, deicidi criar um mini aplicativo de Agenda e controle de pacientes. Para tal fim, fiz uma mock API utilizando a biblioteca Json-server do Node.js para simular uma espécie de Banco de Dados.
+Assim, ocorreu meu primeiro contato de forma prática com o CRUD (Create, Read, Update, Delete) onde, para realizá-lo, eu decidi também trabalhar com classes e POO (Programação Orientada a Objeto) para desenvolver minhas habilidades com esse paradigma tão importante dentro da programação.
+Desta forma, com uma Classe chamada Sistema, eu criei todos os métodos que seriam executados pelo aplicativo, como cadastro de usuários, troca de senha, validação de login e autocomplete, por exemplo.
+Porém, este projeto tinha o intuito de ser completamente desafiador para mim. Assim sendo, além de trabalhar com POO e CRUD pela primeira vez, eu também decidi utilizar um pré-processador de CSS conhecido como SASS de tal forma que eu aprendesse a melhorar a minha produtividade na hora de criar estilos.
+Em resumo, pode-se destacar que os meus aprendizados foram: POO, CRUD, como criar uma mock API com Json-server, validações de login, utilização do SASS e, para finalizar, a criação de um README com várias sessões e um sumário linkado com as estruturas do arquivo markdown no qual foi escrito. 
 
 ## Sumário
 
