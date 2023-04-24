@@ -25,6 +25,8 @@ formulario.addEventListener("submit", async evento => {
                 break;
             }
         }
+
+        window.location.replace("../../index.html");
     }else {
         imprimeErro("Senhas não são coincidentes");
     }
