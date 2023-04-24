@@ -1,0 +1,33 @@
+@import "../../abstract/variaveis";
+
+.principal__tarefas {
+    .principal__tarefas {
+        background-color: $branco;
+        border-radius: 16px;
+        box-sizing: border-box;
+        padding: .3em 1em;
+        text-align: center;
+    }
+    .tarefas__titulo {
+        color: $cor-secundaria;
+        font-weight: 500;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .tarefas__formulario {
+        box-sizing: border-box;
+        text-align: left;
+        display: grid;
+        grid-template: repeat(4, auto) / auto 1fr;
+        margin: 1em 0;
+        .checkbox {
+            display: inline-block;
+        }
+        .formulario__rotulo {
+            display: inline-block;
+            line-height: 1.5em;
+        }
+    }
+
+
+}

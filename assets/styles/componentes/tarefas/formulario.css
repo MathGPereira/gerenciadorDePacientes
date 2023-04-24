@@ -1,0 +1,27 @@
+.principal__tarefas .principal__tarefas {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 0.3em 1em;
+  text-align: center;
+}
+.principal__tarefas .tarefas__titulo {
+  color: #ED2728;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+}
+.principal__tarefas .tarefas__formulario {
+  box-sizing: border-box;
+  text-align: left;
+  display: grid;
+  grid-template: repeat(4, auto)/auto 1fr;
+  margin: 1em 0;
+}
+.principal__tarefas .tarefas__formulario .checkbox {
+  display: inline-block;
+}
+.principal__tarefas .tarefas__formulario .formulario__rotulo {
+  display: inline-block;
+  line-height: 1.5em;
+}/*# sourceMappingURL=formulario.css.map */
