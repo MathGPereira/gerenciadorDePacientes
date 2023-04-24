@@ -13,8 +13,7 @@ window.addEventListener("load", async () => {
         botaoExcluirPaciente.addEventListener("click", async evento => {
             evento.preventDefault();
             
-            sistema.deletaPaciente(evento.target.dataset.id)
-            await geraPacientesNaTela(sistema);
+            sistema.deletaPaciente(evento.target.dataset.id);
         });
     });
 });

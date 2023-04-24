@@ -8,7 +8,9 @@ formularioAdicionaPaciente.addEventListener("submit", evento => {
 
     const inputsPaciente = document.querySelectorAll("[data-input]");
     const [nome, sobrenome, idade, sexo, tratamento, consulta] = [...inputsPaciente];
+    const data = new Date(consulta.value);
+    const dataFormatada = (data.getDate() + 1) + "/" + (data.getMonth() + 1) + "/" + data.getFullYear();
 
-    sistema.setCadastro(nome.value, sobrenome.value, "paciente", idade.value, sexo.value, tratamento.value, consulta.value);
+    sistema.setCadastro(nome.value, sobrenome.value, "paciente", idade.value, sexo.value.toUpperCase(), tratamento.value, dataFormatada);
     window.location.href = "../paginas/pacientes.html";
 });
