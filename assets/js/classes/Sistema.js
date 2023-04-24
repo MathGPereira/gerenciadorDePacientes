@@ -66,10 +66,8 @@ export default class Sistema {
         return listaTrueFalse.includes("true");
     }
 
-    async mudaSenha(senha) {
-        const objetoSenha = {"senha": parseInt(senha)};
-        
-        await Sistema.getSetDb("PUT", objetoSenha, "medico");
+    async mudaSenha(objeto, id) {
+        await Sistema.getSetDb("PUT", objeto, "medico", id);
     }
 
     gravaLocalStorage(ultimoEmail, ultimaSenha) {

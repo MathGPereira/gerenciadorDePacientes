@@ -5,7 +5,7 @@
       "nome": "Matheus",
       "sobrenome": "Pereira",
       "email": "matheusgp.mto@outlook.com",
-      "senha": "12345678",
+      "senha": "123123123",
       "id": 1
     }
   ],
@@ -13,6 +13,10 @@
     {
       "email": "matheusgp.mto@outlook.com",
       "id": 1
+    },
+    {
+      "email": "matheusgp.mto@outlook.com",
+      "id": 2
     }
   ]
 }
