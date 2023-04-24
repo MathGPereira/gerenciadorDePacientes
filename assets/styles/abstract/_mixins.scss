@@ -24,3 +24,13 @@
         }
     }
 }
+
+@mixin rodape($icone, $imagem) {
+    .rodape {
+        .rodape__icone {
+            .icone-#{$icone} {
+                background: url("../../../img/icones/#{$imagem}.png") no-repeat center center / cover;
+            }
+        }
+    }
+}
