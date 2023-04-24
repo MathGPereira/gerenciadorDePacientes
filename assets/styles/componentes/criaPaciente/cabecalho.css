@@ -1,0 +1,22 @@
+.cabecalho {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.cabecalho .cabecalho__titulo {
+  padding: 0;
+}
+.cabecalho .cabecalho__link {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 0.5em;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+.cabecalho .cabecalho__link:hover {
+  background-color: #FFFFFF;
+  color: #701414;
+  border-color: #701414;
+  text-decoration: underline;
+}/*# sourceMappingURL=cabecalho.css.map */
