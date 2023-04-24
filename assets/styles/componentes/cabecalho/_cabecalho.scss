@@ -10,6 +10,7 @@
     justify-content: space-between;
     padding: 1em;
     .cabecalho__menu-hamburguer {
+        cursor: pointer;
         .menu-hamburguer__icone {
             background: url("../img/icones/menu-hamburguer.png") no-repeat center center / cover;
             height: 32px;

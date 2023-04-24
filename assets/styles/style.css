@@ -21,6 +21,9 @@ html, body {
   justify-content: space-between;
   padding: 1em;
 }
+.cabecalho .cabecalho__menu-hamburguer {
+  cursor: pointer;
+}
 .cabecalho .cabecalho__menu-hamburguer .menu-hamburguer__icone {
   background: url("../img/icones/menu-hamburguer.png") no-repeat center center/cover;
   height: 32px;
