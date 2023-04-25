@@ -90,6 +90,10 @@ export default class Sistema {
         await Sistema.getSetDb("DELETE", null, "tarefas", id)
     }
 
+    async editaTarefa(objeto, id) {
+        await Sistema.getSetDb("PUT", objeto, "tarefas", id);
+    }
+
     gravaLocalStorage(ultimoEmail, ultimaSenha) {
         window.localStorage.clear();
         window.localStorage.setItem("info", JSON.stringify(

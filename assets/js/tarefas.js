@@ -8,8 +8,10 @@ const formulario = document.querySelector("[data-tarefas]");
 textArea.addEventListener("blur", () => {
     const novaTarefa = textArea.value;
 
-    sistema.colocaTarefa(novaTarefa);
-    
+    if(novaTarefa !== "") {
+        sistema.colocaTarefa(novaTarefa);
+    }
+
     textArea.value = "";
     textArea.classList.toggle("inativo");
 });
@@ -28,8 +30,18 @@ window.addEventListener("load", async () => {
             const tarefa = botaoMudaEstado.parentNode;
 
             if(botaoMudaEstado.dataset.mudaEstado === "editar") {
-                // await sistema.editaTarefa();
-                console.log("editei")
+                textArea.classList.toggle("inativo");
+
+                textArea.addEventListener("keydown", async evento => {
+                    if(evento.key === "Enter") {
+                        const novaTarefa = textArea.value;
+
+                        await sistema.editaTarefa({tarefa: `${novaTarefa}`, id: `${tarefa.dataset.id}`}, tarefa.dataset.id)
+                        
+                        textArea.value = "";
+                        textArea.classList.toggle("inativo");
+                    }
+                });
             }else {
                 await sistema.deletaTarefa(tarefa.dataset.id);
             }
