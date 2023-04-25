@@ -1,31 +1,36 @@
 @import "../../abstract/variaveis";
 
-.principal__tarefas {
-    .principal__tarefas {
-        background-color: $branco;
-        border-radius: 16px;
-        box-sizing: border-box;
-        padding: .3em 1em;
-        text-align: center;
-    }
-    .tarefas__titulo {
-        color: $cor-secundaria;
-        font-weight: 500;
+.tarefas {
+    display: grid;
+    grid-template: repeat(2, auto) / 1fr;
+    padding: .5em 0;
+    .formulario__celula-input-label {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        padding: .2em;
         text-align: left;
-        text-transform: uppercase;
-    }
-    .tarefas__formulario {
-        box-sizing: border-box;
-        text-align: left;
-        display: grid;
-        grid-template: repeat(4, auto) / auto 1fr;
-        margin: 1em 0;
+        .icones__editar {
+            background: url("../../../img/icones/lapis.png") no-repeat center center / cover;
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+        }
+        .icones__deletar {
+            background: url("../../../img/icones/lixeira.png") no-repeat center center / cover;
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+        }
         .checkbox {
-            display: inline-block;
-        }
-        .formulario__rotulo {
-            display: inline-block;
-            line-height: 1.5em;
+            margin: 0;
         }
     }
+}
+
+.formulario__celula-input-label:hover {
+    background-color: $cor-primaria;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
