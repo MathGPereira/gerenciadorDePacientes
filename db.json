@@ -30,28 +30,7 @@
     {
       "email": "matheusgp.mto@outlook.com",
       "id": 1
-    },
-    {
-      "email": "melksilva@gmail.com",
-      "id": 2
-    },
-    {
-      "email": "melksilva@gmail.com",
-      "id": 3
-    },
-    {
-      "email": "melksilva@gmail.com",
-      "id": 4
-    },
-    {
-      "email": "matheusgp.mto@outlook.com",
-      "id": 5
     }
   ],
-  "tarefas": [
-    {
-      "tarefa": "sss",
-      "id": 1
-    }
-  ]
+  "tarefas": []
 }

@@ -24,7 +24,7 @@ export default class Sistema {
             return BancoDeDados;
         }
 
-        return "Não há nenhum paciente cadastrado no sistema!";
+        return false;
     }
 
     async deletaPaciente(id) {
@@ -74,6 +74,18 @@ export default class Sistema {
         await Sistema.getSetDb("POST", {tarefa: tarefa}, "tarefas");
     }
 
+    async verificaTarefasNoBancoEColocaNaTelaAoCarregar(formulario) {
+        const tarefas = await this.getCadastro(null, "tarefas");
+        
+        if(tarefas) {
+            tarefas.forEach(tarefaCadastrada => {
+                const {tarefa} = tarefaCadastrada;
+    
+                formulario.innerHTML += Sistema.geraTarefaNaTela(tarefa);
+            });
+        }
+    }
+
     gravaLocalStorage(ultimoEmail, ultimaSenha) {
         window.localStorage.clear();
         window.localStorage.setItem("info", JSON.stringify(
@@ -120,7 +132,7 @@ export default class Sistema {
     static validaOpcoes(metodo, cadastro) {
         let option;
     
-        if(metodo === "GET") {
+        if(metodo === "GET" || metodo === "DELETE") {
             option = {
                 method: `${metodo}`
             };
@@ -132,12 +144,21 @@ export default class Sistema {
                 },
                 body: JSON.stringify(cadastro)
             };
-        }else if(metodo === "DELETE") {
-            option = {
-                method: `${metodo}`
-            };
         }
         
         return option;
+    }
+
+    static geraTarefaNaTela(tarefa) {
+        tarefa = `
+            <fieldset class="formulario__celula-input-label">
+                <input type="checkbox" id="tarefa" class="checkbox">
+                <label for="tarefa" class="formulario__rotulo" data-tarefa>${tarefa}</label>
+                <i class="icones__editar"></i>
+                <i class="icones__deletar"></i>
+            </fieldset>
+        `;
+    
+        return tarefa;
     }
 }

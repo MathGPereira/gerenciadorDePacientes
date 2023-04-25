@@ -64,16 +64,3 @@ export async function geraPacientesNaTela(sistema) {
         imprimeErro("Não há nenhum paciente cadastrado atualmente");
     }
 }
-
-export function geraTarefaNaTela(tarefa) {
-    tarefa = `
-        <fieldset class="formulario__celula-input-label">
-            <input type="checkbox" id="tarefa" class="checkbox">
-            <label for="tarefa" class="formulario__rotulo">${tarefa}</label>
-            <i class="icones__editar"></i>
-            <i class="icones__deletar"></i>
-        </fieldset>
-    `;
-
-    return tarefa;
-}
