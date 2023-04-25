@@ -10,6 +10,10 @@ Desta forma, com uma Classe chamada Sistema, eu criei todos os métodos que seri
 Porém, este projeto tinha o intuito de ser completamente desafiador para mim. Assim sendo, além de trabalhar com POO e CRUD pela primeira vez, eu também decidi utilizar um pré-processador de CSS conhecido como SASS de tal forma que eu aprendesse a melhorar a minha produtividade na hora de criar estilos.
 Em resumo, pode-se destacar que os meus aprendizados foram: POO, CRUD, como criar uma mock API com Json-server, validações de login, utilização do SASS e, para finalizar, a criação de um README com várias sessões e um sumário linkado com as estruturas do arquivo markdown no qual foi escrito. 
 
+## Observação
+O projeto aqui descrito foi criado somente para versão mobile com valor base de 375px.
+Pretende-se, em um futuro próximo, estender o layout para versão tablet e desktop
+
 ## Sumário
 
 1. [Tecnologias usadas](#tecnologias)
