@@ -9,6 +9,7 @@
         <link type="text/css" rel="stylesheet" href="../styles/style.css">
         <link type="text/css" rel="stylesheet" href="../styles/componentes/tarefas/rodape.css">
         <link type="text/css" rel="stylesheet" href="../styles/componentes/tarefas/formulario.css">
+        <link type="text/css" rel="stylesheet" href="../styles/componentes/tarefas/principal.css">
         <link type="image/x-icon" rel="shortcut icon" href="../img/icones/icone-navegador.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,17 +88,23 @@
                 </ul>
             </section>
         </aside>
-        <section class="principal__tarefas">
-            <h1 class="tarefas__titulo">Tarefas</h1>
-            <form action="" method="" autocomplete="off" name="tarefas" class="tarefas__formulario">
-                <input type="checkbox" id="tarefa1" class="checkbox">
-                <label for="tarefa1" class="formulario__rotulo">Cobrança do paciente rogério</label>
-                <input type="checkbox" id="tarefa2" class="checkbox">
-                <label for="tarefa2" class="formulario__rotulo">Cadastrar Amanda</label>
-                <input type="checkbox" id="tarefa3" class="checkbox">
-                <label for="tarefa3" class="formulario__rotulo">Solicitar reparo da maca</label>
-            </form>
-        </section>
+        <main class="principal">
+            <h1 class="principal__titulo">Tarefas</h1>
+            <section class="principal__tarefas">
+                <form action="" method="" autocomplete="off" name="tarefas" class="tarefas__formulario">
+                    <input type="checkbox" id="tarefa1" class="checkbox">
+                    <label for="tarefa1" class="formulario__rotulo">Cobrança do paciente rogério</label>
+                    <input type="checkbox" id="tarefa2" class="checkbox">
+                    <label for="tarefa2" class="formulario__rotulo">Cadastrar Amanda</label>
+                    <input type="checkbox" id="tarefa3" class="checkbox">
+                    <label for="tarefa3" class="formulario__rotulo">Solicitar reparo da maca</label>
+                </form>
+                <a href="#" rel="next nofollow" target="_self" class="principal__adiciona-paciente">
+                    <i class="adiciona-paciente__icone"></i>
+                    <p class="adiciona-paciente__texto">Nova tarefa</p>
+                </a>
+            </section>
+        </main>
         <footer class="rodape">
             <div class="rodape__icone">
                 <a href="./home.html" rel="next nofollow" target="_self">

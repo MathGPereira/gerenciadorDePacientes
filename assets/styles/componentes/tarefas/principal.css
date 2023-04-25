@@ -1,0 +1,18 @@
+.principal .principal__adiciona-paciente {
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: flex;
+  text-decoration: none;
+  width: auto;
+}
+.principal .principal__adiciona-paciente .adiciona-paciente__icone {
+  background: url("../../../img/icones/adiciona-tarefa.png") no-repeat center center/cover;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+.principal .principal__adiciona-paciente .adiciona-paciente__texto {
+  color: #ED2728;
+  font-weight: 500;
+}/*# sourceMappingURL=principal.css.map */

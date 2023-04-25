@@ -1,0 +1,21 @@
+@import "../../abstract/variaveis";
+
+.principal {
+    .principal__adiciona-paciente {
+        align-items: center;
+        column-gap: 10px;
+        display: flex;
+        text-decoration: none;
+        width: auto;
+        .adiciona-paciente__icone {
+            background: url("../../../img/icones/adiciona-tarefa.png") no-repeat center center / cover;
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+        }
+        .adiciona-paciente__texto {
+            color: $cor-secundaria;
+            font-weight: 500;
+        }
+    }
+}
