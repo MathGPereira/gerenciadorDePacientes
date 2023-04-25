@@ -76,14 +76,18 @@ export default class Sistema {
 
     async verificaTarefasNoBancoEColocaNaTelaAoCarregar(formulario) {
         const tarefas = await this.getCadastro(null, "tarefas");
-        
+
         if(tarefas) {
             tarefas.forEach(tarefaCadastrada => {
-                const {tarefa} = tarefaCadastrada;
+                const {tarefa, id} = tarefaCadastrada;
     
-                formulario.innerHTML += Sistema.geraTarefaNaTela(tarefa);
+                formulario.innerHTML += Sistema.geraTarefaNaTela(tarefa, id);
             });
         }
+    }
+
+    async deletaTarefa(id) {
+        await Sistema.getSetDb("DELETE", null, "tarefas", id)
     }
 
     gravaLocalStorage(ultimoEmail, ultimaSenha) {
@@ -149,13 +153,13 @@ export default class Sistema {
         return option;
     }
 
-    static geraTarefaNaTela(tarefa) {
+    static geraTarefaNaTela(tarefa, id) {
         tarefa = `
-            <fieldset class="formulario__celula-input-label">
+            <fieldset class="formulario__celula-input-label" data-id="${id}">
                 <input type="checkbox" id="tarefa" class="checkbox">
                 <label for="tarefa" class="formulario__rotulo" data-tarefa>${tarefa}</label>
-                <i class="icones__editar"></i>
-                <i class="icones__deletar"></i>
+                <i class="icones__editar" data-muda-estado="editar"></i>
+                <i class="icones__deletar" data-muda-estado="deletar"></i>
             </fieldset>
         `;
     
