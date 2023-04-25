@@ -24,4 +24,20 @@ modificadorDeEstado.forEach(modificador => {
 
 if(window.location.href.includes("home.html")) {
     sistema.verificaTarefasNoBancoEColocaNaTelaAoCarregar(formularioHome);
+
+    let contador = 0;
+    const pacientes = await sistema.getCadastro(null, "paciente")
+    const hoje = new Date();
+    const dataFormatada = (hoje.getDate()) + "/" + (hoje.getMonth() + 1) + "/" + hoje.getFullYear();
+    const quantidadeConsultas = document.querySelector("[data-quantidade-consultas]");
+
+    if(pacientes.length > 0) {
+        pacientes.forEach(paciente => {
+            if(paciente.consulta === dataFormatada) {
+                contador++;
+            }
+        });
+    }
+
+    quantidadeConsultas.innerHTML = contador;
 }

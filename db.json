@@ -1,15 +1,5 @@
 {
-  "paciente": [
-    {
-      "nome": "Emily",
-      "sobrenome": "Souza",
-      "idade": "20",
-      "sexo": "F",
-      "tratamento": "Dor nos ombros",
-      "consulta": "29/4/2023",
-      "id": 2
-    }
-  ],
+  "paciente": [],
   "medico": [
     {
       "nome": "Matheus",
