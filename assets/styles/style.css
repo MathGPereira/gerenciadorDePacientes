@@ -260,6 +260,7 @@ html, body {
 
 .principal {
   height: calc(100vh - 11.2em);
+  overflow: scroll;
 }
 .principal .principal__saudacoes {
   color: #808080;
@@ -326,7 +327,7 @@ html, body {
   box-sizing: border-box;
   text-align: left;
   display: grid;
-  grid-template: repeat(4, auto)/auto 1fr;
+  grid-template: auto/1fr;
   margin: 1em 0;
 }
 .principal .principal__tarefas .tarefas__formulario .checkbox {
@@ -335,6 +336,9 @@ html, body {
 .principal .principal__tarefas .tarefas__formulario .formulario__rotulo {
   display: inline-block;
   line-height: 1.5em;
+}
+.principal .principal__tarefas .tarefas__formulario i {
+  visibility: hidden;
 }
 .principal .principal__tarefas .tarefas__ver-tudo {
   color: #ED2728;

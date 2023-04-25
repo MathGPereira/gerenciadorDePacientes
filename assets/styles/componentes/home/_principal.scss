@@ -2,6 +2,7 @@
 
 .principal {
     height: calc(100vh - 11.2em);
+    overflow: scroll;
     .principal__saudacoes {
         color: #808080;
         font-size: 14px;
@@ -66,7 +67,7 @@
             box-sizing: border-box;
             text-align: left;
             display: grid;
-            grid-template: repeat(4, auto) / auto 1fr;
+            grid-template: auto / 1fr;
             margin: 1em 0;
             .checkbox {
                 display: inline-block;
@@ -74,6 +75,9 @@
             .formulario__rotulo {
                 display: inline-block;
                 line-height: 1.5em;
+            }
+            i {
+                visibility: hidden;
             }
         }
         .tarefas__ver-tudo {
