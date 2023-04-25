@@ -8,13 +8,16 @@
         align-items: center;
         cursor: pointer;
         display: flex;
-        justify-content: space-between;
         padding: .2em;
-        text-align: left;
+        text-align: right;
+        .formulario__rotulo {
+            margin: 0 auto 0 .5em;
+        }
         .icones__editar {
             background: url("../../../img/icones/lapis.png") no-repeat center center / cover;
             display: inline-block;
             height: 16px;
+            margin-right: .5em;
             width: 16px;
         }
         .icones__deletar {

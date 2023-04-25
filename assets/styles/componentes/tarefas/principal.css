@@ -15,4 +15,13 @@
 .principal .principal__adiciona-paciente .adiciona-paciente__texto {
   color: #ED2728;
   font-weight: 500;
+}
+.principal .textares {
+  height: 26px;
+  margin-top: 1em;
+  width: 99%;
+}
+
+.inativo {
+  display: none;
 }/*# sourceMappingURL=principal.css.map */

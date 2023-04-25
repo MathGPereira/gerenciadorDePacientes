@@ -7,14 +7,17 @@
   align-items: center;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
   padding: 0.2em;
-  text-align: left;
+  text-align: right;
+}
+.tarefas .formulario__celula-input-label .formulario__rotulo {
+  margin: 0 auto 0 0.5em;
 }
 .tarefas .formulario__celula-input-label .icones__editar {
   background: url("../../../img/icones/lapis.png") no-repeat center center/cover;
   display: inline-block;
   height: 16px;
+  margin-right: 0.5em;
   width: 16px;
 }
 .tarefas .formulario__celula-input-label .icones__deletar {
