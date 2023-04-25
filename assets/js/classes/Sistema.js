@@ -70,6 +70,10 @@ export default class Sistema {
         await Sistema.getSetDb("PUT", objeto, "medico", id);
     }
 
+    async colocaTarefa(tarefa) {
+        await Sistema.getSetDb("POST", {tarefa: tarefa}, "tarefas");
+    }
+
     gravaLocalStorage(ultimoEmail, ultimaSenha) {
         window.localStorage.clear();
         window.localStorage.setItem("info", JSON.stringify(

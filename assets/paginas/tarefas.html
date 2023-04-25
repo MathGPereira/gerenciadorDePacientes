@@ -91,7 +91,7 @@
         <main class="principal">
             <h1 class="principal__titulo">Tarefas</h1>
             <section class="principal__tarefas">
-                <form action="" method="" autocomplete="off" name="tarefas" class="tarefas">
+                <form action="" method="" autocomplete="off" name="tarefas" class="tarefas" data-tarefas>
                     <fieldset class="formulario__celula-input-label">
                         <input type="checkbox" id="tarefa1" class="checkbox">
                         <label for="tarefa1" class="formulario__rotulo">Cobrança do paciente rogério</label>
@@ -112,12 +112,12 @@
                         <i class="icones__deletar"></i>
                     </fieldset>
                 </form>
-                <a href="#" rel="next nofollow" target="_self" class="principal__adiciona-paciente">
+                <button class="principal__adiciona-paciente" data-adiciona-paciente>
                     <i class="adiciona-paciente__icone"></i>
                     <p class="adiciona-paciente__texto">Nova tarefa</p>
-                </a>
+                </button>
             </section>
-            <textarea name="tarefa" id="" cols="30" rows="10" class="textares"></textarea>
+            <textarea name="tarefa" id="" cols="30" rows="10" class="textares inativo" placeholder="Insira aqui a sua tarefa" data-area></textarea>
         </main>
         <footer class="rodape">
             <div class="rodape__icone">
@@ -136,5 +136,6 @@
             </div>
         </footer>
         <script type="module" src="../js/home.js"></script>
+        <script type="module" src="../js/tarefas.js"></script>
     </body>
 </html>

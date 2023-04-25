@@ -1,5 +1,7 @@
 .principal .principal__adiciona-paciente {
   align-items: center;
+  background-color: transparent;
+  border: none;
   -moz-column-gap: 10px;
        column-gap: 10px;
   display: flex;
