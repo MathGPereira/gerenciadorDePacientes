@@ -5,8 +5,11 @@ const botaoAdicionaPaciente = document.querySelector("[data-adiciona-paciente]")
 const textArea = document.querySelector("[data-area]");
 const formulario = document.querySelector("[data-tarefas]");
 
+textArea.placeholder = "Clique fora da caixa de texto para adicionar nova tarefa";
+
 textArea.addEventListener("blur", () => {
     const novaTarefa = textArea.value;
+    textArea.placeholder = "Clique fora da caixa de texto para adicionar nova tarefa";
 
     if(novaTarefa !== "") {
         sistema.colocaTarefa(novaTarefa);
@@ -31,6 +34,7 @@ window.addEventListener("load", async () => {
 
             if(botaoMudaEstado.dataset.mudaEstado === "editar") {
                 textArea.classList.toggle("inativo");
+                textArea.placeholder = "Aperter enter para realizar a edição";
 
                 textArea.addEventListener("keydown", async evento => {
                     if(evento.key === "Enter") {

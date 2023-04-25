@@ -4,6 +4,7 @@ const sistema = new Sistema();
 const modificadorDeEstado = document.querySelectorAll("[data-modificador-estado]");
 const menuLateral = document.querySelector("[data-menu-lateral]");
 const spansNome = document.querySelectorAll("[data-nome]");
+const formularioHome = document.querySelector("[data-formulario]");
 
 spansNome.forEach(async span => {
     const resposta = await sistema.getCache()
@@ -20,3 +21,7 @@ modificadorDeEstado.forEach(modificador => {
         }
     })
 });
+
+if(window.location.href.includes("home.html")) {
+    sistema.verificaTarefasNoBancoEColocaNaTelaAoCarregar(formularioHome);
+}
